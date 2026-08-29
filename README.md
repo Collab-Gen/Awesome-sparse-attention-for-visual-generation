@@ -6,15 +6,15 @@ covering algorithms, systems, and task-level applications.
 
 We organize papers into 4 chapters:
 
-1.. **Training-Free Sparse Attention**
+1. **Training-Free Sparse Attention**
 
-2.. **Trainable and Native Sparse Attention**
+2. **Trainable and Native Sparse Attention**
 
-3.. **Systems and Hardware**
+3. **Systems and Hardware**
 
-4.. **Applications**
+4. **Applications**
 
-The current collection contains **193 papers**, with **117 papers** mapped to concrete visual-generation applications.
+The current method and system chapters contain **192 papers**, with **117 papers** mapped to concrete visual-generation applications. The theoretical foundation is retained as background material for the introduction.
 
 Method chapters include visual-generation methods and transferable sparse-attention designs whose mechanisms, systems, or hardware insights inform visual generation.
 
@@ -158,15 +158,20 @@ Fully online methods compute sparse support from the current query-key state, fe
 
 Trainable and native methods learn sparse behavior through architecture design, pretraining, finetuning, distillation, routing, or optimization objectives.
 
-Their sparse support can remain structurally fixed after training or adapt to the current sample through learned selectors and routing modules.
+Their runtime support forms two categories:
 
-## **2.1 Prior-Defined Static Support**
+- **static or structure-defined support** is determined by position, geometry, fixed topology, or a mask/span frozen after training
 
-These methods train a model around a fixed sparse topology. Common structures include windows, blocks, axial patterns, local-global layouts, and predefined neighborhood graphs.
+- **dynamic or content-adaptive support** is selected from the current input, features, geometry, memory, routing scores, or generation state
+
+## **2.1 Static or Structure-Defined Support**
+
+These methods train a model around a stable sparse topology. The support may be predefined through windows, blocks, axial layouts, local-global structures, causal patterns, or geometric neighborhoods, or learned during training and frozen for deployment.
 
 | Year | Paper Links |
 |---:|---|
 | 2018 | [Image Transformer](https://arxiv.org/abs/1802.05751) |
+| 2019 | [Adaptive Attention Span in Transformers](https://arxiv.org/abs/1905.07799) |
 | 2019 | [Blockwise Self-Attention for Long Document Understanding](https://arxiv.org/abs/1911.02972) |
 | 2019 | [Generating Long Sequences with Sparse Transformers](https://arxiv.org/abs/1904.10509) |
 | 2019 | [Your Local GAN: Designing Two Dimensional Local Attention Mechanisms for Generative Models](https://arxiv.org/abs/1911.12287) |
@@ -182,12 +187,14 @@ These methods train a model around a fixed sparse topology. Common structures in
 | 2021 | [Zero-Shot Text-to-Image Generation](https://arxiv.org/abs/2102.12092) |
 | 2022 | [MM-Diffusion: Learning Multi-Modal Diffusion Models for Joint Audio and Video Generation](https://arxiv.org/abs/2212.09478) |
 | 2022 | [NUWA-Infinity: Autoregressive over Autoregressive Generation for Infinite Visual Synthesis](https://arxiv.org/abs/2207.09814) |
+| 2022 | [SwinBERT: End-to-End Transformers with Sparse Attention for Video Captioning](https://arxiv.org/abs/2111.13196) |
 | 2022 | [Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565) |
 | 2023 | [LongNet: Scaling Transformers to 1,000,000,000 Tokens](https://arxiv.org/abs/2307.02486) |
 | 2023 | [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662) |
 | 2024 | [Open-Sora Plan: Open-Source Large Video Generation Model](https://arxiv.org/abs/2412.00131) |
 | 2024 | [Open-Sora: Democratizing Efficient Video Production for All](https://arxiv.org/abs/2412.20404) |
 | 2025 | [Articulate That Object Part (ATOP): 3D Part Articulation via Text and Motion Personalization](https://arxiv.org/abs/2502.07278) |
+| 2025 | [Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile](https://arxiv.org/abs/2502.06155) |
 | 2025 | [FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion](https://arxiv.org/abs/2506.04648) |
 | 2025 | [GigaWorld-0: World Models as Data Engine to Empower Embodied AI](https://arxiv.org/abs/2511.19861) |
 | 2025 | [Hilbert-Guided Sparse Local Attention](https://arxiv.org/abs/2511.05832) |
@@ -211,20 +218,9 @@ These methods train a model around a fixed sparse topology. Common structures in
 | 2026 | [Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming](https://arxiv.org/abs/2608.05663) |
 | 2026 | [X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling](https://arxiv.org/abs/2605.24892) |
 
-## **2.2 Calibrated or Profiled Static Support**
+## **2.2 Dynamic or Content-Adaptive Support**
 
-These methods learn or search a sparse pattern during training or calibration and then deploy the resulting support as a stable execution structure.
-
-| Year | Paper Links |
-|---:|---|
-| 2019 | [Adaptive Attention Span in Transformers](https://arxiv.org/abs/1905.07799) |
-| 2022 | [SwinBERT: End-to-End Transformers with Sparse Attention for Video Captioning](https://arxiv.org/abs/2111.13196) |
-| 2025 | [Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile](https://arxiv.org/abs/2502.06155) |
-| 2025 | [QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification](https://arxiv.org/abs/2509.23681) |
-
-## **2.3 Fully Online Dynamic Support**
-
-These methods train selectors, routers, predictors, or sparse-attention modules that choose support for each input, layer, frame, denoising step, or generation state.
+These methods train selectors, routers, predictors, retrieval modules, or sparse-attention components that choose support for the current input, layer, frame, denoising step, or generation state. Periodic refresh and support reuse describe how dynamic decisions are amortized across nearby attention calls.
 
 | Year | Paper Links |
 |---:|---|
@@ -247,6 +243,7 @@ These methods train selectors, routers, predictors, or sparse-attention modules 
 | 2025 | [MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation](https://arxiv.org/abs/2510.18692) |
 | 2025 | [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](https://arxiv.org/abs/2502.11089) |
 | 2025 | [Optimizing Mixture of Block Attention](https://arxiv.org/abs/2511.11571) |
+| 2025 | [QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification](https://arxiv.org/abs/2509.23681) |
 | 2025 | [SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable Sparse-Linear Attention](https://arxiv.org/abs/2509.24006) |
 | 2025 | [Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers](https://arxiv.org/abs/2512.16615) |
 | 2025 | [USV: Unified Sparsification for Accelerating Video Diffusion Models](https://arxiv.org/abs/2512.05754) |
@@ -530,6 +527,3 @@ Portrait and audio-visual methods connect speech, audio events, facial motion, i
 | 2026 | [Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation](https://arxiv.org/abs/2604.23632) |
 | 2026 | [Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds](https://arxiv.org/abs/2608.23383) |
 | 2026 | [Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming](https://arxiv.org/abs/2608.05663) |
-
-
-
