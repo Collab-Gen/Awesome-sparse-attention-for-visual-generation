@@ -2,21 +2,17 @@
 
 A curated collection of **sparse attention methods for visual generation**,
 
-with a focus on **image, video, world models, 3D/4D, and audio-visual generation**,
+covering algorithms, systems, and task-level applications.
 
-covering algorithms, systems, hardware, and task-level applications.
+We organize papers into 4 chapters:
 
-We organize papers into five chapters:
+1.. **Training-Free Sparse Attention**
 
-1. **Foundations and Analysis**
+2.. **Trainable and Native Sparse Attention**
 
-2. **Training-Free Sparse Attention**
+3. **Systems and Hardware**
 
-3. **Trainable and Native Sparse Attention**
-
-4. **Systems and Hardware**
-
-5. **Applications**
+4. **Applications**
 
 The current collection contains **193 papers**, with **117 papers** mapped to concrete visual-generation applications.
 
@@ -24,15 +20,14 @@ Method chapters include visual-generation methods and transferable sparse-attent
 
 # **🚀 Quick Start**
 
-- [**1. Foundations and Analysis**](#1-foundations-and-analysis)
 
-- [**2. Training-Free Sparse Attention**](#2-training-free-sparse-attention)
+- [**1. Training-Free Sparse Attention**](#1-training-free-sparse-attention)
 
-- [**3. Trainable and Native Sparse Attention**](#3-trainable-and-native-sparse-attention)
+- [**2. Trainable and Native Sparse Attention**](#2-trainable-and-native-sparse-attention)
 
-- [**4. Systems and Hardware**](#4-systems-and-hardware)
+- [**3. Systems and Hardware**](#3-systems-and-hardware)
 
-- [**5. Applications**](#5-applications)
+- [**4. Applications**](#4-applications)
 
 # **Overview**
 
@@ -44,29 +39,13 @@ The application taxonomy provides an orthogonal task view. A paper can therefore
 
 | Category | Main focus |
 |---|---|
-| **Foundations and Analysis** | Approximation principles, sparsity properties, and analytical boundaries |
 | **Training-Free Sparse Attention** | Sparse support introduced directly at inference time without parameter updates |
 | **Trainable and Native Sparse Attention** | Sparse support learned during pretraining, finetuning, distillation, or architecture design |
 | **Systems and Hardware** | Kernels, compilers, runtimes, distributed execution, and accelerator co-design |
 | **Applications** | Image, video, world-model, 3D/4D, and audio-visual generation |
 
-# **1. Foundations and Analysis**
 
-Foundation papers explain why dense attention can be approximated by sparse support and how approximation error changes with sparsity, sequence length, and support design.
-
-These works mainly differ in:
-
-- theoretical versus empirical characterization
-
-- approximation guarantees and error measures
-
-- implications for static and adaptive sparse support
-
-| Year | Paper Links |
-|---:|---|
-| 2024 | [How Sparse Attention Approximates Exact Attention? Your Attention is Naturally $n^C$-Sparse](https://arxiv.org/abs/2404.02690) |
-
-# **2. Training-Free Sparse Attention**
+# **1. Training-Free Sparse Attention**
 
 Training-free methods introduce sparse attention directly at inference time while preserving the parameters of the original model.
 
@@ -80,7 +59,7 @@ Their main design axis is the moment at which sparse support becomes available:
 
 - **fully online dynamic support** selects support for the current attention instance
 
-## **2.1 Prior-Defined Static Support**
+## **1.1 Prior-Defined Static Support**
 
 Prior-defined methods use patterns such as local windows, blocks, stripes, dilation, axial layouts, or fixed global tokens. The support can be compiled before runtime and offers predictable execution.
 
@@ -90,7 +69,7 @@ Prior-defined methods use patterns such as local windows, blocks, stripes, dilat
 | 2025 | [Radial Attention: $O(n\\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
 | 2026 | [LVSA: Training-Free Sparse Attention for Long Video Diffusion](https://arxiv.org/abs/2605.31057) |
 
-## **2.2 Calibrated or Profiled Static Support**
+## **1.2 Calibrated or Profiled Static Support**
 
 Calibrated methods derive a reusable sparse pattern from profiling data, representative prompts, model statistics, or offline search. The resulting support remains fixed during deployment.
 
@@ -103,7 +82,7 @@ Calibrated methods derive a reusable sparse pattern from profiling data, represe
 | 2026 | [Accelerating Text-to-Video Generation with Calibrated Sparse Attention](https://arxiv.org/abs/2603.05503) |
 | 2026 | [ScalingAttention: Discovering Intrinsic Sparse Attention Topology for Video Diffusion Transformers](https://arxiv.org/abs/2606.23019) |
 
-## **2.3 Amortized or Semi-Dynamic Support**
+## **1.3 Amortized or Semi-Dynamic Support**
 
 Amortized methods refresh sparse support only at selected moments and reuse it across nearby denoising steps, layers, frames, chunks, or requests. They balance adaptivity with selection overhead.
 
@@ -125,7 +104,7 @@ Amortized methods refresh sparse support only at selected moments and reuse it a
 | 2026 | [RESA: Bringing Back What Sparse Attention Ignores with Residual Estimation](https://proceedings.iclr.cc/paper_files/paper/2026/file/89bd6217280d1417370c89ee493ba3c7-Paper-Conference.pdf) |
 | 2026 | [Token Radius Attention for Efficient Video Generation](https://arxiv.org/abs/2608.02504) |
 
-## **2.4 Fully Online Dynamic Support**
+## **1.4 Fully Online Dynamic Support**
 
 Fully online methods compute sparse support from the current query-key state, feature geometry, similarity estimate, routing score, or runtime budget. They offer fine-grained input adaptivity.
 
@@ -175,13 +154,13 @@ Fully online methods compute sparse support from the current query-key state, fe
 | 2026 | [Training-free sparse attention based on cumulative energy filtering](https://arxiv.org/abs/2606.16317) |
 | 2026 | [VecAttention: Vector-wise Sparse Attention for Accelerating Long Context Inference](https://arxiv.org/abs/2603.29494) |
 
-# **3. Trainable and Native Sparse Attention**
+# **2. Trainable and Native Sparse Attention**
 
 Trainable and native methods learn sparse behavior through architecture design, pretraining, finetuning, distillation, routing, or optimization objectives.
 
 Their sparse support can remain structurally fixed after training or adapt to the current sample through learned selectors and routing modules.
 
-## **3.1 Prior-Defined Static Support**
+## **2.1 Prior-Defined Static Support**
 
 These methods train a model around a fixed sparse topology. Common structures include windows, blocks, axial patterns, local-global layouts, and predefined neighborhood graphs.
 
@@ -232,7 +211,7 @@ These methods train a model around a fixed sparse topology. Common structures in
 | 2026 | [Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming](https://arxiv.org/abs/2608.05663) |
 | 2026 | [X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling](https://arxiv.org/abs/2605.24892) |
 
-## **3.2 Calibrated or Profiled Static Support**
+## **2.2 Calibrated or Profiled Static Support**
 
 These methods learn or search a sparse pattern during training or calibration and then deploy the resulting support as a stable execution structure.
 
@@ -243,7 +222,7 @@ These methods learn or search a sparse pattern during training or calibration an
 | 2025 | [Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile](https://arxiv.org/abs/2502.06155) |
 | 2025 | [QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification](https://arxiv.org/abs/2509.23681) |
 
-## **3.3 Fully Online Dynamic Support**
+## **2.3 Fully Online Dynamic Support**
 
 These methods train selectors, routers, predictors, or sparse-attention modules that choose support for each input, layer, frame, denoising step, or generation state.
 
@@ -288,7 +267,7 @@ These methods train selectors, routers, predictors, or sparse-attention modules 
 | 2026 | [Wonder: Video World Model Done Better](https://arxiv.org/abs/2607.26037) |
 | 2026 | [Z-Order Transformer for Feed-Forward Gaussian Splatting](https://arxiv.org/abs/2605.13465) |
 
-# **4. Systems and Hardware**
+# **3. Systems and Hardware**
 
 Systems and hardware works turn algorithmic sparsity into measured latency, throughput, memory, communication, and energy improvements.
 
@@ -302,7 +281,7 @@ They mainly differ in:
 
 - accelerator architecture and algorithm-hardware co-design
 
-## **4.1 Kernels, Compilers, and Operators**
+## **3.1 Kernels, Compilers, and Operators**
 
 These works optimize sparse-attention execution through kernels, compiler transformations, tiling, data layouts, load balancing, and fused operators.
 
@@ -320,7 +299,7 @@ These works optimize sparse-attention execution through kernels, compiler transf
 | 2026 | [LiteTopK: Exploiting the Curse of Dimensionality for a Fused Indexer-TopK Kernel in Long-Context Sparse Attention](https://arxiv.org/abs/2607.11976) |
 | 2026 | [RIS-Kernel: A Model-Agnostic Architecture for Long-Context LLM Inference via Sparse Attention](https://arxiv.org/abs/2607.21927) |
 
-## **4.2 Serving and Runtime Systems**
+## **3.2 Serving and Runtime Systems**
 
 These works manage sparse-attention execution across requests, batches, memory hierarchies, and changing runtime budgets.
 
@@ -333,7 +312,7 @@ These works manage sparse-attention execution across requests, batches, memory h
 | 2026 | [Sol Video Inference Engine: Agent-Native Full-Stack Acceleration Framework for Efficient Video Generation](https://arxiv.org/abs/2606.23743) |
 | 2026 | [Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents](https://arxiv.org/abs/2606.06453) |
 
-## **4.3 Distributed and Parallel Execution**
+## **3.3 Distributed and Parallel Execution**
 
 These works coordinate sparse attention across devices through sequence parallelism, sparse communication, partitioning, and distributed scheduling.
 
@@ -344,7 +323,7 @@ These works coordinate sparse attention across devices through sequence parallel
 | 2025 | [SparseServe: Unlocking Parallelism for Dynamic Sparse Attention in Long-Context LLM Serving](https://arxiv.org/abs/2509.24626) |
 | 2026 | [DSA: Efficient Inference For Video Generation Models via Distributed Sparse Attention](https://proceedings.iclr.cc/paper_files/paper/2026/file/c3728248f3c627d1f16ca5726cdf83f5-Paper-Conference.pdf) |
 
-## **4.4 Accelerators and Co-Design**
+## **3.4 Accelerators and Co-Design**
 
 These works design hardware dataflows, memory systems, processing elements, and co-designed sparse-attention mechanisms.
 
@@ -369,13 +348,13 @@ These works design hardware dataflows, memory systems, processing elements, and 
 | 2026 | [Heterogeneous LLM Serving with General-Purpose Processing-Near-Memory for Retrieval-Based Sparse Attention](https://arxiv.org/abs/2608.03555) |
 | 2026 | [Salca: A Sparsity-Aware Hardware Accelerator for Efficient Long-Context Attention Decoding](https://arxiv.org/abs/2604.24820) |
 
-# **5. Applications**
+# **4. Applications**
 
 Application papers show how sparse attention is adapted to the structure and quality requirements of visual generation tasks.
 
 This chapter discusses task-specific support patterns, temporal or spatial constraints, practical acceleration, memory behavior, and generation quality. Papers are intentionally mapped back to the method taxonomy so that mechanism and application evidence remain connected.
 
-# **5.1 Image Generation and Editing**
+# **4.1 Image Generation and Editing**
 
 Image-generation methods exploit spatial locality, regional structure, multiscale layouts, or autoregressive neighborhoods. Their evaluation emphasizes image quality, prompt alignment, controllability, and high-resolution efficiency.
 
@@ -399,11 +378,11 @@ Image-generation methods exploit spatial locality, regional structure, multiscal
 | 2026 | [SDiT: Semantic Region-Adaptive for Diffusion Transformers](https://arxiv.org/abs/2601.12283) |
 | 2026 | [SparVAR: Exploring Sparsity in Visual AutoRegressive Modeling for Training-Free Acceleration](https://arxiv.org/abs/2602.04361) |
 
-# **5.2 Video Generation and Editing**
+# **4.2 Video Generation and Editing**
 
 Video-generation methods combine spatial and temporal sparsity. Their support must preserve motion, identity, temporal consistency, and long-range dependencies while controlling the cost of large spatiotemporal token sequences.
 
-## **5.2.1 General Video Generation**
+## **4.2.1 General Video Generation**
 
 General video-generation methods accelerate standard text-to-video, image-to-video, and video-diffusion workloads across common durations and resolutions.
 
@@ -452,7 +431,7 @@ General video-generation methods accelerate standard text-to-video, image-to-vid
 | 2026 | [Training-free sparse attention based on cumulative energy filtering](https://arxiv.org/abs/2606.16317) |
 | 2026 | [VMonarch: Efficient Video Diffusion Transformers with Structured Attention](https://arxiv.org/abs/2601.22275) |
 
-## **5.2.2 Long Video Generation**
+## **4.2.2 Long Video Generation**
 
 Long-video methods emphasize long-range temporal consistency, memory growth, chunk interaction, and sparse support across extended sequences.
 
@@ -472,7 +451,7 @@ Long-video methods emphasize long-range temporal consistency, memory growth, chu
 | 2026 | [LVSA: Training-Free Sparse Attention for Long Video Diffusion](https://arxiv.org/abs/2605.31057) |
 | 2026 | [Veda: Scalable Video Diffusion via Distilled Sparse Attention](https://arxiv.org/abs/2605.30325) |
 
-## **5.2.3 Autoregressive and Streaming Generation**
+## **4.2.3 Autoregressive and Streaming Generation**
 
 Autoregressive and streaming methods select sparse support under causal, incremental, or real-time generation constraints.
 
@@ -486,7 +465,7 @@ Autoregressive and streaming methods select sparse support under causal, increme
 | 2026 | [Sparse Forcing: Native Trainable Sparse Attention for Real-time Autoregressive Diffusion Video Generation](https://arxiv.org/abs/2604.21221) |
 | 2026 | [SparSTAR: Sparse Attention for SpaceTime AutoRegressive Video Synthesis](https://arxiv.org/abs/2608.10519) |
 
-## **5.2.4 Other Video Tasks and Cross-Scenario Support**
+## **4.2.4 Other Video Tasks and Cross-Scenario Support**
 
 This group covers video editing, control, insertion, unified image-video generation, sparse sequence parallelism, and other task-specific video settings.
 
@@ -505,7 +484,7 @@ This group covers video editing, control, insertion, unified image-video generat
 | 2026 | [Sol Video Inference Engine: Agent-Native Full-Stack Acceleration Framework for Efficient Video Generation](https://arxiv.org/abs/2606.23743) |
 | 2026 | [VecAttention: Vector-wise Sparse Attention for Accelerating Long Context Inference](https://arxiv.org/abs/2603.29494) |
 
-# **5.3 World Models and Interactive Visual Generation**
+# **4.3 World Models and Interactive Visual Generation**
 
 World-model methods use sparse attention to model long action-observation histories, interactive environments, embodied trajectories, and temporally extended visual dynamics.
 
@@ -522,7 +501,7 @@ World-model methods use sparse attention to model long action-observation histor
 | 2026 | [Wonder: Video World Model Done Better](https://arxiv.org/abs/2607.26037) |
 | 2026 | [X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling](https://arxiv.org/abs/2605.24892) |
 
-# **5.4 3D/4D Visual Generation**
+# **4.4 3D/4D Visual Generation**
 
 3D/4D methods exploit geometric neighborhoods, view consistency, spatial structures, point or voxel organization, and temporal deformation to define efficient attention support.
 
@@ -537,7 +516,7 @@ World-model methods use sparse attention to model long action-observation histor
 | 2026 | [Sculpt4D: Generating 4D Shapes via Sparse-Attention Diffusion Transformers](https://arxiv.org/abs/2604.21592) |
 | 2026 | [Z-Order Transformer for Feed-Forward Gaussian Splatting](https://arxiv.org/abs/2605.13465) |
 
-# **5.5 Portrait and Audio-Visual Generation**
+# **4.5 Portrait and Audio-Visual Generation**
 
 Portrait and audio-visual methods connect speech, audio events, facial motion, identity, and video frames. Sparse support is used to retain cross-modal synchronization while reducing temporal attention cost.
 
@@ -552,7 +531,5 @@ Portrait and audio-visual methods connect speech, audio events, facial motion, i
 | 2026 | [Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds](https://arxiv.org/abs/2608.23383) |
 | 2026 | [Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming](https://arxiv.org/abs/2608.05663) |
 
-# **Contributing**
 
-Contributions are welcome through GitHub issues and pull requests. Suggested papers should make sparse attention a central part of the method, system, hardware design, or visual-generation application and include a stable public paper link.
 
