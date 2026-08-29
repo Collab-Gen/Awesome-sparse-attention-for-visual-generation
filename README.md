@@ -10,9 +10,9 @@ We organize papers into 4 chapters:
 
 2.. **Trainable and Native Sparse Attention**
 
-3. **Systems and Hardware**
+3.. **Systems and Hardware**
 
-4. **Applications**
+4.. **Applications**
 
 The current collection contains **193 papers**, with **117 papers** mapped to concrete visual-generation applications.
 
