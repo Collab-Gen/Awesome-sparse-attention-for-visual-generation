@@ -14,7 +14,7 @@ We organize papers into 4 chapters:
 
 4. **Applications**
 
-The current method and system chapters contain **192 papers**, with **117 papers** mapped to concrete visual-generation applications. The theoretical foundation is retained as background material for the introduction.
+The curated corpus contains **192 unique papers**. The method and system chapters contain **191 papers**, with **116 papers** mapped to concrete visual-generation applications. The theoretical foundation is retained as background material for the introduction.
 
 Method chapters include visual-generation methods and transferable sparse-attention designs whose mechanisms, systems, or hardware insights inform visual generation.
 
@@ -36,6 +36,8 @@ Sparse attention accelerates visual generation by selecting a structured subset 
 The method taxonomy first distinguishes whether sparse behavior is introduced without parameter updates or learned through training. Within each algorithmic branch, static support is determined before the current attention instance, while dynamic support adapts to the current input or runtime state.
 
 The application taxonomy provides an orthogonal task view. A paper can therefore appear in a method section for its sparse-attention mechanism and again in an application section for its task adaptation, practical speedup, and generation-quality behavior.
+
+Papers that report multiple sparse-attention operating modes receive one primary placement based on the headline sparse result, the training requirement of the core support path, and the main experimental setting. Additional training-free, trainable, static, or dynamic modes are retained as cross-references and mechanism variants.
 
 | Category | Main focus |
 |---|---|
@@ -66,7 +68,7 @@ Prior-defined methods use patterns such as local windows, blocks, stripes, dilat
 | Year | Paper Links |
 |---:|---|
 | 2025 | [Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light](https://arxiv.org/abs/2504.16922) |
-| 2025 | [Radial Attention: $O(n\\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
+| 2025 | [Radial Attention: $O(n\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
 | 2026 | [LVSA: Training-Free Sparse Attention for Long Video Diffusion](https://arxiv.org/abs/2605.31057) |
 
 ## **1.2 Calibrated or Profiled Static Support**
@@ -144,7 +146,6 @@ Fully online methods compute sparse support from the current query-key state, fe
 | 2026 | [PISA: Piecewise Sparse Attention Is Wiser for Efficient Diffusion Transformers](https://arxiv.org/abs/2602.01077) |
 | 2026 | [Ride the Wave: Precision-Allocated Sparse Attention for Smooth Video Generation](https://arxiv.org/abs/2604.12219) |
 | 2026 | [SCOPE: Subspace Clustering with Online Per-Head Top-K Estimation for Sparse Video Attention](https://arxiv.org/abs/2608.12780) |
-| 2026 | [SDiT: Semantic Region-Adaptive for Diffusion Transformers](https://arxiv.org/abs/2601.12283) |
 | 2026 | [SimInsert: Seamless Video Object Insertion via Regional Sparse Attention Fusion](https://arxiv.org/abs/2605.23245) |
 | 2026 | [Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification](https://arxiv.org/abs/2607.24027) |
 | 2026 | [SPADE: An Input-Adaptive Sparse Attention Engine for Fast Video Diffusion Models Inference](https://arxiv.org/abs/2608.03335) |
@@ -372,7 +373,6 @@ Image-generation methods exploit spatial locality, regional structure, multiscal
 | 2025 | [Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers](https://arxiv.org/abs/2512.16615) |
 | 2026 | [AccelAes: Accelerating Diffusion Transformers for Training-Free Aesthetic-Enhanced Image Generation](https://arxiv.org/abs/2603.12575) |
 | 2026 | [ElasticDiT: Efficient Diffusion Transformers via Elastic Architecture and Sparse Attention for High-Resolution Image Generation on Mobile Devices](https://arxiv.org/abs/2605.15684) |
-| 2026 | [SDiT: Semantic Region-Adaptive for Diffusion Transformers](https://arxiv.org/abs/2601.12283) |
 | 2026 | [SparVAR: Exploring Sparsity in Visual AutoRegressive Modeling for Training-Free Acceleration](https://arxiv.org/abs/2602.04361) |
 
 # **4.2 Video Generation and Editing**
@@ -440,7 +440,7 @@ Long-video methods emphasize long-range temporal consistency, memory growth, chu
 | 2025 | [LongCat-Video Technical Report](https://arxiv.org/abs/2510.22200) |
 | 2025 | [Mixture of Contexts for Long Video Generation](https://arxiv.org/abs/2508.21058) |
 | 2025 | [MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation](https://arxiv.org/abs/2510.18692) |
-| 2025 | [Radial Attention: $O(n\\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
+| 2025 | [Radial Attention: $O(n\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
 | 2025 | [Training-free and Adaptive Sparse Attention for Efficient Long Video Generation](https://arxiv.org/abs/2502.21079) |
 | 2025 | [VMoBA: Mixture-of-Block Attention for Video Diffusion Models](https://arxiv.org/abs/2506.23858) |
 | 2026 | [DynamicRad: Content-Adaptive Sparse Attention for Long Video Diffusion](https://arxiv.org/abs/2604.20470) |
