@@ -14,7 +14,7 @@ We organize papers into 4 chapters:
 
 4. **Applications**
 
-The curated corpus contains **192 unique papers**. The method and system chapters contain **191 papers**, with **116 papers** mapped to concrete visual-generation applications. The theoretical foundation is retained as background material for the introduction.
+The curated corpus contains **194 unique papers**. The method and system chapters contain **193 papers**, with **118 papers** mapped to concrete visual-generation applications. The theoretical foundation is retained as background material for the introduction.
 
 Method chapters include visual-generation methods and transferable sparse-attention designs whose mechanisms, systems, or hardware insights inform visual generation.
 
@@ -192,8 +192,10 @@ These methods train a model around a stable sparse topology. The support may be 
 | 2022 | [Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565) |
 | 2023 | [LongNet: Scaling Transformers to 1,000,000,000 Tokens](https://arxiv.org/abs/2307.02486) |
 | 2023 | [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662) |
+| 2024 | [MSC: Multi-Scale Spatio-Temporal Causal Attention for Autoregressive Video Diffusion](https://arxiv.org/abs/2412.09828) |
 | 2024 | [Open-Sora Plan: Open-Source Large Video Generation Model](https://arxiv.org/abs/2412.00131) |
 | 2024 | [Open-Sora: Democratizing Efficient Video Production for All](https://arxiv.org/abs/2412.20404) |
+| 2024 | [Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005) |
 | 2025 | [Articulate That Object Part (ATOP): 3D Part Articulation via Text and Motion Personalization](https://arxiv.org/abs/2502.07278) |
 | 2025 | [Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile](https://arxiv.org/abs/2502.06155) |
 | 2025 | [FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion](https://arxiv.org/abs/2506.04648) |
@@ -388,6 +390,7 @@ General video-generation methods accelerate standard text-to-video, image-to-vid
 | 2022 | [Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565) |
 | 2023 | [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662) |
 | 2024 | [Open-Sora: Democratizing Efficient Video Production for All](https://arxiv.org/abs/2412.20404) |
+| 2024 | [Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005) |
 | 2025 | [Bidirectional Sparse Attention for Faster Video Diffusion Training](https://arxiv.org/abs/2509.01085) |
 | 2025 | [BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation](https://arxiv.org/abs/2508.10774) |
 | 2025 | [DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance](https://arxiv.org/abs/2505.14708) |
@@ -457,6 +460,7 @@ Autoregressive and streaming methods select sparse support under causal, increme
 | 2021 | [GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions](https://arxiv.org/abs/2104.14806) |
 | 2021 | [VideoGPT: Video Generation using VQ-VAE and Transformers](https://arxiv.org/abs/2104.10157) |
 | 2022 | [NUWA-Infinity: Autoregressive over Autoregressive Generation for Infinite Visual Synthesis](https://arxiv.org/abs/2207.09814) |
+| 2024 | [MSC: Multi-Scale Spatio-Temporal Causal Attention for Autoregressive Video Diffusion](https://arxiv.org/abs/2412.09828) |
 | 2026 | [Light Forcing: Accelerating Autoregressive Video Diffusion via Sparse Attention](https://arxiv.org/abs/2602.04789) |
 | 2026 | [MonarchRT: Efficient Attention for Real-Time Video Generation](https://arxiv.org/abs/2602.12271) |
 | 2026 | [Sparse Forcing: Native Trainable Sparse Attention for Real-time Autoregressive Diffusion Video Generation](https://arxiv.org/abs/2604.21221) |
