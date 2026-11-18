@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: If you use this collection in your research, please cite the survey below.
+title: Awesome Sparse Attention for Visual Generation
+type: dataset
+authors:
+  - name: Collab-Gen
+repository-code: https://github.com/Collab-Gen/Awesome-sparse-attention-for-visual-generation
+preferred-citation:
+  type: article
+  title: "Sparse Attention for Visual Generation: Toward Algorithm-System Co-Design"
+  authors:
+    - family-names: Zhang
+      given-names: Majun
+    - family-names: Guo
+      given-names: Yuan
+    - family-names: Wu
+      given-names: Decheng
+    - family-names: Xu
+      given-names: Jiayang
+    - family-names: Pan
+      given-names: Changhao
+    - family-names: Zhuo
+      given-names: Fan
+    - family-names: Yang
+      given-names: Xiaoda
+    - family-names: Wen
+      given-names: Chenyuhao
+    - family-names: Zhao
+      given-names: Zhou
+  journal: arXiv
+  year: 2026
+  url: https://arxiv.org/abs/2611.21029
