@@ -1,0 +1,32 @@
+name: Suggest a paper or correction
+description: Propose a paper, fix an entry, or share an official implementation link.
+body:
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Change type
+      options:
+        - New paper
+        - Correction to an existing entry
+        - Official code or project link
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: Paper link or affected README section
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: For a new paper, include its title, year, suggested section, and the sparse attention mechanism it illustrates.
+    validations:
+      required: true
+  - type: input
+    id: implementation
+    attributes:
+      label: Official code or project page
+      placeholder: https://github.com/...
