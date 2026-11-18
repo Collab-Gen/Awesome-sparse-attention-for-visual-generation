@@ -82,7 +82,7 @@ Spatial and temporal priors give rise to windows, strides, axial patterns, and m
 | 2024 | [Open-Sora: Democratizing Efficient Video Production for All](https://arxiv.org/abs/2412.20404) |
 | 2024 | [Open-Sora Plan: Open-Source Large Video Generation Model](https://arxiv.org/abs/2412.00131) |
 | 2024 | [Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005) |
-| 2025 | [Radial Attention: $O(n\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
+| 2025 | [Radial Attention: O(n log n) Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
 | 2025 | [TalkingMachines: Real-Time Audio-Driven FaceTime-Style Video via Autoregressive Diffusion Models](https://arxiv.org/abs/2506.03099) |
 | 2026 | [Avatar V: Scaling Video-Reference Avatar Video Generation](https://arxiv.org/abs/2606.13872) |
 | 2026 | [Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation](https://arxiv.org/abs/2604.23632) |
@@ -190,11 +190,11 @@ Pooling summarizes groups, sampling measures a subset of interactions, and stati
 
 ### Support specification
 
-Ranked selection retains a fixed count (top-$k$) or enough estimated attention mass (top-$p$). Thresholding tests each candidate against a cutoff. Membership rules test shared groups or routes. Template search chooses a structured pattern using runtime evidence, and mandatory links can preserve text, sink tokens, or reference frames.
+Ranked selection retains a fixed count (top-k) or enough estimated attention mass (top-p). Thresholding tests each candidate against a cutoff. Membership rules test shared groups or routes. Template search chooses a structured pattern using runtime evidence, and mandatory links can preserve text, sink tokens, or reference frames.
 
 | Rule | Examples |
 | --- | --- |
-| Top-$k$, top-$p$, and adaptive budgets | [ADSA](https://arxiv.org/abs/2506.18226), [Focused Forcing](https://arxiv.org/abs/2605.18346), [Mixture of Contexts](https://arxiv.org/abs/2508.21058), [Jenga](https://arxiv.org/abs/2505.16864), [SpargeAttention2](https://arxiv.org/abs/2602.13515), [BSA](https://arxiv.org/abs/2509.01085), [SCOPE](https://arxiv.org/abs/2608.12780), [USV](https://arxiv.org/abs/2512.05754) |
+| Top-k, top-p, and adaptive budgets | [ADSA](https://arxiv.org/abs/2506.18226), [Focused Forcing](https://arxiv.org/abs/2605.18346), [Mixture of Contexts](https://arxiv.org/abs/2508.21058), [Jenga](https://arxiv.org/abs/2505.16864), [SpargeAttention2](https://arxiv.org/abs/2602.13515), [BSA](https://arxiv.org/abs/2509.01085), [SCOPE](https://arxiv.org/abs/2608.12780), [USV](https://arxiv.org/abs/2512.05754) |
 | Hierarchical selection | [VMoBA](https://arxiv.org/abs/2506.23858), [Log-linear Sparse Attention](https://arxiv.org/abs/2512.16615), [Light Forcing](https://arxiv.org/abs/2602.04789) |
 | Thresholds | [VecAttention](https://arxiv.org/abs/2603.29494), [Sol-Attn](https://arxiv.org/abs/2607.24027), [SpargeAttention](https://arxiv.org/abs/2502.18137), [DynSparse](https://arxiv.org/abs/2606.16317) |
 | Randomized search or selection | [DynaST](https://arxiv.org/abs/2207.06124), [High-Resolution Sparse Attention](https://arxiv.org/abs/2012.07288), [PASA](https://arxiv.org/abs/2604.12219) |
@@ -237,7 +237,7 @@ Predetermined connectivity enables reusable layouts, compact metadata, and patte
 
 ### Dynamic support execution
 
-The runtime must construct support and organize the resulting work. [DSV](https://arxiv.org/abs/2502.07590) fuses projected scoring and incremental top-$k$, and [Sol-Attn](https://arxiv.org/abs/2607.24027) fuses threshold selection with attention evaluation. [Light Interaction](https://arxiv.org/abs/2605.31158) fuses preparation and pooling, while [FAST-AR](https://arxiv.org/abs/2602.01801) uses low-bit matching. [Sparse VideoGen2](https://arxiv.org/abs/2505.18875), [MoGA](https://arxiv.org/abs/2510.18692), and [LIVEditor-14B](https://arxiv.org/abs/2605.04569) pack or reorder operands to improve locality. [HyperVAttention](https://arxiv.org/abs/2607.03012) merges query clusters using the cost of the resulting tiles, and [FVAttn](https://arxiv.org/abs/2607.16190) migrates work between devices based on observed load.
+The runtime must construct support and organize the resulting work. [DSV](https://arxiv.org/abs/2502.07590) fuses projected scoring and incremental top-k, and [Sol-Attn](https://arxiv.org/abs/2607.24027) fuses threshold selection with attention evaluation. [Light Interaction](https://arxiv.org/abs/2605.31158) fuses preparation and pooling, while [FAST-AR](https://arxiv.org/abs/2602.01801) uses low-bit matching. [Sparse VideoGen2](https://arxiv.org/abs/2505.18875), [MoGA](https://arxiv.org/abs/2510.18692), and [LIVEditor-14B](https://arxiv.org/abs/2605.04569) pack or reorder operands to improve locality. [HyperVAttention](https://arxiv.org/abs/2607.03012) merges query clusters using the cost of the resulting tiles, and [FVAttn](https://arxiv.org/abs/2607.16190) migrates work between devices based on observed load.
 
 ### General sparse execution
 
@@ -380,7 +380,7 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2025 | [LongCat-Video Technical Report](https://arxiv.org/abs/2510.22200) |
 | 2025 | [Mixture of Contexts for Long Video Generation](https://arxiv.org/abs/2508.21058) |
 | 2025 | [MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation](https://arxiv.org/abs/2510.18692) |
-| 2025 | [Radial Attention: $O(n\log n)$ Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
+| 2025 | [Radial Attention: O(n log n) Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
 | 2025 | [Training-free and Adaptive Sparse Attention for Efficient Long Video Generation](https://arxiv.org/abs/2502.21079) |
 | 2025 | [VMoBA: Mixture-of-Block Attention for Video Diffusion Models](https://arxiv.org/abs/2506.23858) |
 | 2026 | [DynamicRad: Content-Adaptive Sparse Attention for Long Video Diffusion](https://arxiv.org/abs/2604.20470) |
@@ -496,7 +496,7 @@ These papers extend the reading list with further visual methods and work on spa
 | 2025 | [DiTVR: Zero-Shot Diffusion Transformer for Video Restoration](https://arxiv.org/abs/2508.07811) |
 | 2025 | [FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference](https://arxiv.org/abs/2502.20766) |
 | 2025 | [SparseD: Sparse Attention for Diffusion Language Models](https://arxiv.org/abs/2509.24014) |
-| 2025 | [Twilight: Adaptive Attention Sparsity with Hierarchical Top-$p$ Pruning](https://arxiv.org/abs/2502.02770) |
+| 2025 | [Twilight: Adaptive Attention Sparsity with Hierarchical Top-p Pruning](https://arxiv.org/abs/2502.02770) |
 | 2026 | [Efficient Audio-Visual Generation via Synchrony-Aware Cross-Modal Sparse Attention](https://arxiv.org/abs/2608.15522) |
 | 2026 | [LoSA: Locality Aware Sparse Attention for Block-Wise Diffusion Language Models](https://arxiv.org/abs/2604.12056) |
 | 2026 | [PulseCol: Periodically Refreshed Column-Sparse Attention for Accelerating Diffusion Language Models](https://arxiv.org/abs/2605.20813) |
