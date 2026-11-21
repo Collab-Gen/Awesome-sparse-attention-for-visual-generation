@@ -1,12 +1,12 @@
-# Awesome Sparse Attention for Visual Generation
-
-Companion repository for **Sparse Attention for Visual Generation: Toward Algorithm–System Co-Design**. The reading list follows the survey’s **4+1+3** framework, from selecting query–key pairs to executing sparse workloads on hardware.
+<h1 align="center">Awesome Sparse Attention for Visual Generation</h1>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2611.21029"><img alt="arXiv 2611.21029" src="https://img.shields.io/badge/arXiv-2611.21029-B31B1B?style=plastic&amp;logo=arxiv&amp;logoColor=white"></a>
   <a href="https://arxiv.org/pdf/2611.21029"><img alt="Download the survey PDF" src="https://img.shields.io/badge/Paper-PDF-2563A6?style=plastic"></a>
   <a href="https://github.com/Collab-Gen/Awesome-sparse-attention-for-visual-generation"><img alt="GitHub repository" src="https://img.shields.io/badge/GitHub-181717?style=plastic&amp;logo=github&amp;logoColor=white"></a>
 </p>
+
+Companion repository for **Sparse Attention for Visual Generation: Toward Algorithm–System Co-Design**. The reading list follows the survey’s **4+1+3** framework, from selecting query–key pairs to executing sparse workloads on hardware.
 
 ## Contents
 
