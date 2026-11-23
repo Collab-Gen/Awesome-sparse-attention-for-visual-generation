@@ -1,4 +1,4 @@
-<h1 align="center">Awesome Sparse Attention for Visual Generation</h1>
+<h1 align="center">Sparse Attention for Visual Generation</h1>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2611.21029"><img alt="arXiv 2611.21029" src="https://img.shields.io/badge/arXiv-2611.21029-B31B1B?style=plastic&amp;logo=arxiv&amp;logoColor=white"></a>
