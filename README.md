@@ -33,6 +33,8 @@ Representative methods trace the shift from reducing attention interactions to d
 
 These papers illustrate the main design choices in the [framework](#the-413-framework). Each implementation link points to a repository published by the paper’s authors or project team.
 
+<!-- BEGIN PAPERS: featured -->
+
 | Method | What to look for | Paper | Official code |
 | --- | --- | --- | --- |
 | WorldKV | Retrieval of historical KV chunks using camera and action correspondence | [Paper](https://arxiv.org/abs/2605.22718) | [WorldKV](https://github.com/cvlab-kaist/WorldKV) |
@@ -42,10 +44,12 @@ These papers illustrate the main design choices in the [framework](#the-413-fram
 | LiteAttention | Reuse of tile-skip decisions across denoising steps | [Paper](https://arxiv.org/abs/2511.11062) | [LiteAttention](https://github.com/moonmath-ai/LiteAttention) |
 | Sparse VideoGen2 | Semantic clustering and token permutation for variable-length sparse blocks | [Paper](https://arxiv.org/abs/2505.18875) | [Sparse VideoGen](https://github.com/svg-project/Sparse-VideoGen) |
 | Direct3D-S2 | Spatial block selection in sparse 3D volumes | [Paper](https://arxiv.org/abs/2505.17412) | [Direct3D-S2](https://github.com/DreamTechAI/Direct3D-S2) |
-| DraftAttention | Pooled queries and keys estimate which regions to retain | [Paper](https://arxiv.org/abs/2505.14708) | [DraftAttention](https://github.com/shawnricecake/draft-attention) |
 | VSA | End-to-end training with coarse selection and fine-grained attention inside selected tiles | [Paper](https://arxiv.org/abs/2505.13389) | [FastVideo](https://github.com/hao-ai-lab/FastVideo) |
+| DraftAttention | Pooled queries and keys estimate which regions to retain | [Paper](https://arxiv.org/abs/2505.14708) | [DraftAttention](https://github.com/shawnricecake/draft-attention) |
 | Generalized Neighborhood Attention | Kernel support for multidimensional sparse neighborhoods | [Paper](https://arxiv.org/abs/2504.16922) | [NATTEN](https://github.com/SHI-Labs/NATTEN) |
 | Sliding Tile Attention | Prescribed spatiotemporal windows aligned to hardware tiles | [Paper](https://arxiv.org/abs/2502.04507) | [FastVideo](https://github.com/hao-ai-lab/FastVideo) |
+
+<!-- END PAPERS: featured -->
 
 For a task-specific reading list, see [Applications](#applications). For how to compare methods, see [Evaluation benchmarks and metrics](#evaluation-benchmarks-and-metrics).
 
@@ -63,9 +67,9 @@ The tile example shows how two masks with the same number of retained connection
 | **1 · Auxiliary mechanisms** | Reuse and correction | What can be carried into a later evaluation? How are omitted contributions or changes to normalization approximated? |
 | **3 · System implementation** | Data organization, execution, dataflow | How are connections and tensors represented? How is work partitioned and scheduled? How are operands and metadata moved or kept resident? |
 
-The algorithm sections are organized by whether support depends on runtime content. Training requirements are a separate property. For example, [Image Transformer](https://arxiv.org/abs/1802.05751) trains with prescribed windows, while [LVSA](https://arxiv.org/abs/2605.31057) applies a prescribed temporal pattern without retraining. [DraftAttention](https://arxiv.org/abs/2505.14708) builds a mask from the current sample at inference, while [VSA](https://arxiv.org/abs/2505.13389) trains with content-dependent sparse support.
+The algorithm sections are organized by whether support depends on runtime content. Training requirements are a separate property. For example, [Image Transformer][paper:arxiv:1802.05751] trains with prescribed windows, while [LVSA][paper:arxiv:2605.31057] applies a prescribed temporal pattern without retraining. [DraftAttention][paper:arxiv:2505.14708] builds a mask from the current sample at inference, while [VSA][paper:arxiv:2505.13389] trains with content-dependent sparse support.
 
-A paper can appear in multiple sections when it illustrates different mechanisms. Paper tables list the newest entries first by bibliographic year. Within a year, they follow the arXiv identifier or the publication month. Some links point to earlier preprints.
+A paper can appear in multiple sections when it illustrates different mechanisms. Paper tables are generated from the [paper catalog](data/papers.json) and sorted by first public date. The year column shows the bibliographic year, which may differ from the preprint year.
 
 ## Static sparse attention
 
@@ -73,7 +77,9 @@ Static support is independent of runtime content. Its geometry can vary by layer
 
 ### Architectural and structural patterns
 
-Spatial and temporal priors give rise to windows, strides, axial patterns, and multiscale neighborhoods. Conditioning, causal order, and reference identity can require specific connections to be retained. [Qihoo-T2X](https://arxiv.org/abs/2409.04005) combines local and shifted windows with a global proxy-token branch. [MSC](https://arxiv.org/abs/2412.09828) combines local high-resolution windows with broader, temporally strided low-resolution attention.
+Spatial and temporal priors give rise to windows, strides, axial patterns, and multiscale neighborhoods. Conditioning, causal order, and reference identity can require specific connections to be retained. [Qihoo-T2X][paper:arxiv:2409.04005] combines local and shifted windows with a global proxy-token branch. [MSC][paper:arxiv:2412.09828] combines local high-resolution windows with broader, temporally strided low-resolution attention.
+
+<!-- BEGIN PAPERS: mechanism-structural -->
 
 | Year | Paper |
 | ---: | --- |
@@ -85,12 +91,12 @@ Spatial and temporal priors give rise to windows, strides, axial patterns, and m
 | 2026 | [Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds](https://arxiv.org/abs/2608.23383) |
 | 2026 | [Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming](https://arxiv.org/abs/2608.05663) |
 | 2026 | [Avatar V: Scaling Video-Reference Avatar Video Generation](https://arxiv.org/abs/2606.13872) |
-| 2026 | [FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution](https://openaccess.thecvf.com/content/CVPR2026/html/Zhuang_FlashVSR_Towards_Real-time_Diffusion-Based_Streaming_Video_Super_Resolution_CVPR_2026_paper.html) |
 | 2026 | [LVSA: Training-Free Sparse Attention for Long Video Diffusion](https://arxiv.org/abs/2605.31057) |
 | 2026 | [OSP-Next: Efficient High-Quality Video Generation with Sparse Sequence Parallelism, HiF8 Quantization, and Reinforcement Learning](https://arxiv.org/abs/2605.28691) |
 | 2026 | [Helix4D: Complex 4D Mesh Generation](https://arxiv.org/abs/2605.26109) |
 | 2026 | [Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation](https://arxiv.org/abs/2604.23632) |
 | 2026 | [Sculpt4D: Generating 4D Shapes via Sparse-Attention Diffusion Transformers](https://arxiv.org/abs/2604.21592) |
+| 2026 | [FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution](https://openaccess.thecvf.com/content/CVPR2026/html/Zhuang_FlashVSR_Towards_Real-time_Diffusion-Based_Streaming_Video_Super_Resolution_CVPR_2026_paper.html) |
 | 2025 | [Radial Attention: O(n log n) Sparse Attention with Energy Decay for Long Video Generation](https://arxiv.org/abs/2506.19852) |
 | 2025 | [HMAR: Efficient Hierarchical Masked Auto-Regressive Image Generation](https://arxiv.org/abs/2506.04421) |
 | 2025 | [TalkingMachines: Real-Time Audio-Driven FaceTime-Style Video via Autoregressive Diffusion Models](https://arxiv.org/abs/2506.03099) |
@@ -99,8 +105,8 @@ Spatial and temporal priors give rise to windows, strides, axial patterns, and m
 | 2024 | [Open-Sora Plan: Open-Source Large Video Generation Model](https://arxiv.org/abs/2412.00131) |
 | 2024 | [Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005) |
 | 2023 | [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662) |
-| 2023 | [MM-Diffusion: Learning Multi-Modal Diffusion Models for Joint Audio and Video Generation](https://arxiv.org/abs/2212.09478) |
 | 2022 | [Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565) |
+| 2023 | [MM-Diffusion: Learning Multi-Modal Diffusion Models for Joint Audio and Video Generation](https://arxiv.org/abs/2212.09478) |
 | 2022 | [NUWA-Infinity: Autoregressive over Autoregressive Generation for Infinite Visual Synthesis](https://arxiv.org/abs/2207.09814) |
 | 2021 | [NÜWA: Visual Synthesis Pre-training for Neural visUal World creAtion](https://arxiv.org/abs/2111.12417) |
 | 2021 | [CogView: Mastering Text-to-Image Generation via Transformers](https://arxiv.org/abs/2105.13290) |
@@ -111,9 +117,13 @@ Spatial and temporal priors give rise to windows, strides, axial patterns, and m
 | 2019 | [Generating Long Sequences with Sparse Transformers](https://arxiv.org/abs/1904.10509) |
 | 2018 | [Image Transformer](https://arxiv.org/abs/1802.05751) |
 
+<!-- END PAPERS: mechanism-structural -->
+
 ### Calibrated templates
 
-Offline traces guide the choice of templates or mask parameters using evidence such as attention mass, approximation error, or measured latency. [Sliding Tile Attention](https://arxiv.org/abs/2502.04507) searches over 3D window shapes using head-output error. [CalibAtt](https://arxiv.org/abs/2603.05503) aggregates block selection frequencies across prompts. [ScalingAttention](https://arxiv.org/abs/2606.23019) profiles the fidelity of masks constructed at different densities. A method can also calibrate budgets or thresholds offline and still choose its connections dynamically at runtime.
+Offline traces guide the choice of templates or mask parameters using evidence such as attention mass, approximation error, or measured latency. [Sliding Tile Attention][paper:arxiv:2502.04507] searches over 3D window shapes using head-output error. [CalibAtt][paper:arxiv:2603.05503] aggregates block selection frequencies across prompts. [ScalingAttention][paper:arxiv:2606.23019] profiles the fidelity of masks constructed at different densities. A method can also calibrate budgets or thresholds offline and still choose its connections dynamically at runtime.
+
+<!-- BEGIN PAPERS: mechanism-calibrated -->
 
 | Year | Paper |
 | ---: | --- |
@@ -132,11 +142,13 @@ Offline traces guide the choice of templates or mask parameters using evidence s
 | 2024 | [LiteVAR: Compressing Visual Autoregressive Modelling with Efficient Attention and Quantization](https://arxiv.org/abs/2411.17178) |
 | 2024 | [DiTFastAttn: Attention Compression for Diffusion Transformer Models](https://arxiv.org/abs/2406.08552) |
 
-The survey illustrates text-to-image quality on [FLUX](https://github.com/black-forest-labs/flux) using [CLEAR](https://arxiv.org/abs/2412.16112), [SpargeAttention](https://arxiv.org/abs/2502.18137), [PLADIS](https://arxiv.org/abs/2503.07677), [Chipmunk](https://arxiv.org/abs/2506.03275), [PISA](https://arxiv.org/abs/2602.01077), and [AccelAes](https://arxiv.org/abs/2603.12575). [Text-to-image comparison](https://arxiv.org/html/2611.21029v1#S5.F6)
+<!-- END PAPERS: mechanism-calibrated -->
+
+The survey illustrates text-to-image quality on [FLUX](https://github.com/black-forest-labs/flux) using [CLEAR][paper:arxiv:2412.16112], [SpargeAttention][paper:arxiv:2502.18137], [PLADIS][paper:arxiv:2503.07677], [Chipmunk][paper:arxiv:2506.03275], [PISA][paper:arxiv:2602.01077], and [AccelAes][paper:arxiv:2603.12575]. [Text-to-image comparison](https://arxiv.org/html/2611.21029v1#S5.F6)
 
 ## Dynamic sparse attention
 
-Dynamic support depends on runtime content. A selector can draw on the current query and key features, online softmax statistics, generation history, or external conditioning. [Focused Forcing](https://arxiv.org/abs/2605.18346) scores historical frames using current queries. [WorldKV](https://arxiv.org/abs/2605.22718) uses camera and action correspondence to retrieve relevant history. [Input-Aware Sparse Attention](https://arxiv.org/abs/2510.02617) uses pose cues for co-speech video. [Survey §V-B](https://arxiv.org/html/2611.21029v1#S5.SS2)
+Dynamic support depends on runtime content. A selector can draw on the current query and key features, online softmax statistics, generation history, or external conditioning. [Focused Forcing][paper:arxiv:2605.18346] scores historical frames using current queries. [WorldKV][paper:arxiv:2605.22718] uses camera and action correspondence to retrieve relevant history. [Input-Aware Sparse Attention][paper:arxiv:2510.02617] uses pose cues for co-speech video. [Survey §V-B](https://arxiv.org/html/2611.21029v1#S5.SS2)
 
 ### Evidence construction
 
@@ -144,6 +156,8 @@ Pooling summarizes groups, sampling measures a subset of interactions, and stati
 
 <details>
 <summary>Pooling and regional scoring</summary>
+
+<!-- BEGIN PAPERS: mechanism-pooling -->
 
 | Year | Paper |
 | ---: | --- |
@@ -157,14 +171,18 @@ Pooling summarizes groups, sampling measures a subset of interactions, and stati
 | 2026 | [SpargeAttention2: Trainable Sparse Attention via Hybrid Top-k+Top-p Masking and Distillation Fine-Tuning](https://arxiv.org/abs/2602.13515) |
 | 2025 | [LongCat-Video Technical Report](https://arxiv.org/abs/2510.22200) |
 | 2025 | [FG-Attn: Leveraging Fine-Grained Sparse Attention in Video Diffusion Models](https://arxiv.org/abs/2509.16518) |
-| 2025 | [DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance](https://arxiv.org/abs/2505.14708) |
 | 2025 | [VSA: Faster Video Diffusion with Trainable Sparse Attention](https://arxiv.org/abs/2505.13389) |
+| 2025 | [DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance](https://arxiv.org/abs/2505.14708) |
 | 2025 | [SpargeAttention: Accurate and Training-free Sparse Attention Accelerating Any Model Inference](https://arxiv.org/abs/2502.18137) |
+
+<!-- END PAPERS: mechanism-pooling -->
 
 </details>
 
 <details>
 <summary>Sampling and statistical scoring</summary>
+
+<!-- BEGIN PAPERS: mechanism-sampling -->
 
 | Year | Paper |
 | ---: | --- |
@@ -182,10 +200,14 @@ Pooling summarizes groups, sampling measures a subset of interactions, and stati
 | 2025 | [XAttention: Block Sparse Attention with Antidiagonal Scoring](https://arxiv.org/abs/2503.16428) |
 | 2025 | [Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2502.01776) |
 
+<!-- END PAPERS: mechanism-sampling -->
+
 </details>
 
 <details>
 <summary>Hashing, clustering, and projection</summary>
+
+<!-- BEGIN PAPERS: mechanism-clustering -->
 
 | Year | Paper |
 | ---: | --- |
@@ -206,10 +228,14 @@ Pooling summarizes groups, sampling measures a subset of interactions, and stati
 | 2020 | [Efficient Content-Based Sparse Attention with Routing Transformers](https://arxiv.org/abs/2003.05997) |
 | 2020 | [Reformer: The Efficient Transformer](https://arxiv.org/abs/2001.04451) |
 
+<!-- END PAPERS: mechanism-clustering -->
+
 </details>
 
 <details>
 <summary>Learned scoring and grouping</summary>
+
+<!-- BEGIN PAPERS: mechanism-learned -->
 
 | Year | Paper |
 | ---: | --- |
@@ -220,6 +246,8 @@ Pooling summarizes groups, sampling measures a subset of interactions, and stati
 | 2025 | [Direct3D-S2: Gigascale 3D Generation Made Easy with Spatial Sparse Attention](https://arxiv.org/abs/2505.17412) |
 | 2020 | [Sparse Sinkhorn Attention](https://arxiv.org/abs/2002.11296) |
 
+<!-- END PAPERS: mechanism-learned -->
+
 </details>
 
 ### Support specification
@@ -228,15 +256,15 @@ Ranked selection retains a fixed count (top-k) or enough estimated attention mas
 
 | Rule | Examples |
 | --- | --- |
-| Top-k, top-p, and adaptive budgets | [ALLOT](https://arxiv.org/abs/2610.29441), [UltraTex](https://arxiv.org/abs/2609.23169), [ADSA](https://arxiv.org/abs/2506.18226), [Focused Forcing](https://arxiv.org/abs/2605.18346), [Mixture of Contexts](https://arxiv.org/abs/2508.21058), [Jenga](https://arxiv.org/abs/2505.16864), [SpargeAttention2](https://arxiv.org/abs/2602.13515), [BSA](https://arxiv.org/abs/2509.01085), [SCOPE](https://arxiv.org/abs/2608.12780), [USV](https://arxiv.org/abs/2512.05754) |
-| Hierarchical selection | [VMoBA](https://arxiv.org/abs/2506.23858), [Log-linear Sparse Attention](https://arxiv.org/abs/2512.16615), [Light Forcing](https://arxiv.org/abs/2602.04789) |
-| Thresholds | [VecAttention](https://arxiv.org/abs/2603.29494), [Sol-Attn](https://arxiv.org/abs/2607.24027), [SpargeAttention](https://arxiv.org/abs/2502.18137), [DynSparse](https://arxiv.org/abs/2606.16317) |
-| Randomized search or selection | [DynaST](https://arxiv.org/abs/2207.06124), [High-Resolution Sparse Attention](https://arxiv.org/abs/2012.07288), [PASA](https://arxiv.org/abs/2604.12219) |
-| Membership and routing | [Reformer](https://arxiv.org/abs/2001.04451), [Routing Transformer](https://arxiv.org/abs/2003.05997), [MoGA](https://arxiv.org/abs/2510.18692), [FAST-AR](https://arxiv.org/abs/2602.01801) |
-| Template search and adaptive geometry | [Sparse VideoGen](https://arxiv.org/abs/2502.01776), [RainFusion](https://arxiv.org/abs/2505.21036), [HeadCast](https://arxiv.org/abs/2607.20125), [Token Radius Attention](https://arxiv.org/abs/2608.02504), [DynamicRad](https://arxiv.org/abs/2604.20470) |
-| Required or retrieved context | [Velox](https://arxiv.org/abs/2610.22311), [WorldAttention](https://arxiv.org/abs/2609.34606), [Light Interaction](https://arxiv.org/abs/2605.31158), [RainFusion2.0](https://arxiv.org/abs/2512.24086), [ViewRoPE](https://arxiv.org/abs/2602.07854), [Wonder](https://arxiv.org/abs/2607.26037), [WorldKV](https://arxiv.org/abs/2605.22718), [ReWorld](https://arxiv.org/abs/2608.23565), [Sparse Forcing](https://arxiv.org/abs/2604.21221), [SparSTAR](https://arxiv.org/abs/2608.10519) |
+| Top-k, top-p, and adaptive budgets | [ALLOT][paper:arxiv:2610.29441], [UltraTex][paper:arxiv:2609.23169], [ADSA][paper:arxiv:2506.18226], [Focused Forcing][paper:arxiv:2605.18346], [Mixture of Contexts][paper:arxiv:2508.21058], [Jenga][paper:arxiv:2505.16864], [SpargeAttention2][paper:arxiv:2602.13515], [BSA][paper:arxiv:2509.01085], [SCOPE][paper:arxiv:2608.12780], [USV][paper:arxiv:2512.05754] |
+| Hierarchical selection | [VMoBA][paper:arxiv:2506.23858], [Log-linear Sparse Attention][paper:arxiv:2512.16615], [Light Forcing][paper:arxiv:2602.04789] |
+| Thresholds | [VecAttention][paper:arxiv:2603.29494], [Sol-Attn][paper:arxiv:2607.24027], [SpargeAttention][paper:arxiv:2502.18137], [DynSparse][paper:arxiv:2606.16317] |
+| Randomized search or selection | [DynaST][paper:arxiv:2207.06124], [High-Resolution Sparse Attention][paper:arxiv:2012.07288], [PASA][paper:arxiv:2604.12219] |
+| Membership and routing | [Reformer][paper:arxiv:2001.04451], [Routing Transformer][paper:arxiv:2003.05997], [MoGA][paper:arxiv:2510.18692], [FAST-AR][paper:arxiv:2602.01801] |
+| Template search and adaptive geometry | [Sparse VideoGen][paper:arxiv:2502.01776], [RainFusion][paper:arxiv:2505.21036], [HeadCast][paper:arxiv:2607.20125], [Token Radius Attention][paper:arxiv:2608.02504], [DynamicRad][paper:arxiv:2604.20470] |
+| Required or retrieved context | [Velox][paper:arxiv:2610.22311], [WorldAttention][paper:arxiv:2609.34606], [Light Interaction][paper:arxiv:2605.31158], [RainFusion2.0][paper:arxiv:2512.24086], [ViewRoPE][paper:arxiv:2602.07854], [Wonder][paper:arxiv:2607.26037], [WorldKV][paper:arxiv:2605.22718], [ReWorld][paper:arxiv:2608.23565], [Sparse Forcing][paper:arxiv:2604.21221], [SparSTAR][paper:arxiv:2608.10519] |
 
-The survey's text-to-video comparison uses [Wan](https://arxiv.org/abs/2503.20314) as the backbone. [Text-to-video comparison](https://arxiv.org/html/2611.21029v1#S5.F7)
+The survey's text-to-video comparison uses [Wan][paper:arxiv:2503.20314] as the backbone. [Text-to-video comparison](https://arxiv.org/html/2611.21029v1#S5.F7)
 
 ## Auxiliary mechanisms
 
@@ -246,9 +274,9 @@ Reuse carries forward masks, block scores, normalization statistics, group assig
 
 | What is reused | Examples |
 | --- | --- |
-| Support masks and skip decisions | [GSRS](https://arxiv.org/abs/2610.21129), [Token Radius Attention](https://arxiv.org/abs/2608.02504), [LiteAttention](https://arxiv.org/abs/2511.11062), [DFSAttn](https://arxiv.org/abs/2605.23445), [HEART](https://arxiv.org/abs/2605.14513), [Chorus II](https://arxiv.org/abs/2606.25040), [LoSA](https://arxiv.org/abs/2608.12032) |
-| Scores, normalization statistics, or group assignments | [DecoupAttn](https://arxiv.org/abs/2611.05917), [RAPID](https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_RAPID_Reusing_Attention_Sparsity_with_Inter-step_Adaptation_for_Efficient_Video_CVPR_2026_paper.pdf), [MOD-DiT](https://arxiv.org/abs/2601.11641), [AdaSpa](https://arxiv.org/abs/2502.21079), [Sparse VideoGen2](https://arxiv.org/abs/2505.18875), [AdaCluster](https://arxiv.org/abs/2604.18348), [SVOO](https://arxiv.org/abs/2603.18636) |
-| Outputs and execution state | [LiteVAR](https://arxiv.org/abs/2411.17178), [DiTFastAttn](https://arxiv.org/abs/2406.08552), [FlashOmni](https://arxiv.org/abs/2509.25401), [DiSC](https://arxiv.org/abs/2605.25798) |
+| Support masks and skip decisions | [GSRS][paper:arxiv:2610.21129], [Token Radius Attention][paper:arxiv:2608.02504], [LiteAttention][paper:arxiv:2511.11062], [DFSAttn][paper:arxiv:2605.23445], [HEART][paper:arxiv:2605.14513], [Chorus II][paper:arxiv:2606.25040], [LoSA][paper:arxiv:2608.12032] |
+| Scores, normalization statistics, or group assignments | [DecoupAttn][paper:arxiv:2611.05917], [RAPID][paper:venue:cvpr-2026-rapid], [MOD-DiT][paper:arxiv:2601.11641], [AdaSpa][paper:arxiv:2502.21079], [Sparse VideoGen2][paper:arxiv:2505.18875], [AdaCluster][paper:arxiv:2604.18348], [SVOO][paper:arxiv:2603.18636] |
+| Outputs and execution state | [LiteVAR][paper:arxiv:2411.17178], [DiTFastAttn][paper:arxiv:2406.08552], [FlashOmni][paper:arxiv:2509.25401], [DiSC][paper:arxiv:2605.25798] |
 
 ### Correction
 
@@ -256,10 +284,10 @@ Restricting support omits value contributions and changes the normalization of r
 
 | Mechanism | Examples |
 | --- | --- |
-| Estimate a dense–sparse output residual | [RECAP](https://arxiv.org/abs/2610.26244), [DiTFastAttn](https://arxiv.org/abs/2406.08552), [SparVAR](https://arxiv.org/abs/2602.04361), [QuantSparse](https://arxiv.org/abs/2509.23681), [SparsePR](https://arxiv.org/abs/2608.18484) |
-| Rescale retained attention weights | [Re-ttention](https://arxiv.org/abs/2505.22918), [Rectified SpaAttn](https://arxiv.org/abs/2511.19835) |
-| Recover omitted contributions with pooled, linear, or Taylor approximations | [PoCoAttn](https://arxiv.org/abs/2611.20307), [ESTRA](https://arxiv.org/abs/2611.10448), [DecoupAttn](https://arxiv.org/abs/2611.05917), [Sink-Sparse Hybrid Attention](https://arxiv.org/abs/2610.22975), [SLA](https://arxiv.org/abs/2509.24006), [SVG-EAR](https://arxiv.org/abs/2603.08982), [ClusterAttention](https://arxiv.org/abs/2608.26965), [PISA](https://arxiv.org/abs/2602.01077), [PASA](https://arxiv.org/abs/2604.12219) |
-| Fall back to a fuller attention computation | [LIVEditor-14B](https://arxiv.org/abs/2605.04569), [Sparse-vDiT](https://arxiv.org/abs/2506.03065), [HeadCast](https://arxiv.org/abs/2607.20125) |
+| Estimate a dense–sparse output residual | [RECAP][paper:arxiv:2610.26244], [DiTFastAttn][paper:arxiv:2406.08552], [SparVAR][paper:arxiv:2602.04361], [QuantSparse][paper:arxiv:2509.23681], [SparsePR][paper:arxiv:2608.18484] |
+| Rescale retained attention weights | [Re-ttention][paper:arxiv:2505.22918], [Rectified SpaAttn][paper:arxiv:2511.19835] |
+| Recover omitted contributions with pooled, linear, or Taylor approximations | [PoCoAttn][paper:arxiv:2611.20307], [ESTRA][paper:arxiv:2611.10448], [DecoupAttn][paper:arxiv:2611.05917], [Sink-Sparse Hybrid Attention][paper:arxiv:2610.22975], [SLA][paper:arxiv:2509.24006], [SVG-EAR][paper:arxiv:2603.08982], [ClusterAttention][paper:arxiv:2608.26965], [PISA][paper:arxiv:2602.01077], [PASA][paper:arxiv:2604.12219] |
+| Fall back to a fuller attention computation | [LIVEditor-14B][paper:arxiv:2605.04569], [Sparse-vDiT][paper:arxiv:2506.03065], [HeadCast][paper:arxiv:2607.20125] |
 
 ## Algorithm–system co-design
 
@@ -267,21 +295,21 @@ Irregular support can leave tiles partly filled and increase indexing, layout, a
 
 ### Static support execution
 
-Predetermined connectivity enables reusable layouts, compact metadata, and pattern-specific kernels. [CalibAtt](https://arxiv.org/abs/2603.05503) encodes contiguous key ranges as intervals, and [ScalingAttention](https://arxiv.org/abs/2606.23019) uses bitmaps for block membership. [Sparse Transformer](https://arxiv.org/abs/1904.10509) rearranges strided connectivity for block computation. [HilbertA](https://arxiv.org/abs/2509.26538) retains a Hilbert-ordered sequence across layers. [Sparse-vDiT](https://arxiv.org/abs/2506.03065) batches heads by calibrated pattern and dispatches them to specialized kernels.
+Predetermined connectivity enables reusable layouts, compact metadata, and pattern-specific kernels. [CalibAtt][paper:arxiv:2603.05503] encodes contiguous key ranges as intervals, and [ScalingAttention][paper:arxiv:2606.23019] uses bitmaps for block membership. [Sparse Transformer][paper:arxiv:1904.10509] rearranges strided connectivity for block computation. [HilbertA][paper:arxiv:2509.26538] retains a Hilbert-ordered sequence across layers. [Sparse-vDiT][paper:arxiv:2506.03065] batches heads by calibrated pattern and dispatches them to specialized kernels.
 
 ### Dynamic support execution
 
-The runtime must construct support and organize the resulting work. [DSV](https://arxiv.org/abs/2502.07590) fuses projected scoring and incremental top-k, and [Sol-Attn](https://arxiv.org/abs/2607.24027) fuses threshold selection with attention evaluation. [Light Interaction](https://arxiv.org/abs/2605.31158) fuses preparation and pooling, while [FAST-AR](https://arxiv.org/abs/2602.01801) uses low-bit matching. [Sparse VideoGen2](https://arxiv.org/abs/2505.18875), [MoGA](https://arxiv.org/abs/2510.18692), and [LIVEditor-14B](https://arxiv.org/abs/2605.04569) pack or reorder operands to improve locality. [HyperVAttention](https://arxiv.org/abs/2607.03012) merges query clusters using the cost of the resulting tiles, and [FVAttn](https://arxiv.org/abs/2607.16190) migrates work between devices based on observed load.
+The runtime must construct support and organize the resulting work. [DSV][paper:arxiv:2502.07590] fuses projected scoring and incremental top-k, and [Sol-Attn][paper:arxiv:2607.24027] fuses threshold selection with attention evaluation. [Light Interaction][paper:arxiv:2605.31158] fuses preparation and pooling, while [FAST-AR][paper:arxiv:2602.01801] uses low-bit matching. [Sparse VideoGen2][paper:arxiv:2505.18875], [MoGA][paper:arxiv:2510.18692], and [LIVEditor-14B][paper:arxiv:2605.04569] pack or reorder operands to improve locality. [HyperVAttention][paper:arxiv:2607.03012] merges query clusters using the cost of the resulting tiles, and [FVAttn][paper:arxiv:2607.16190] migrates work between devices based on observed load.
 
 ### General sparse execution
 
 | System dimension | Common optimizations | Examples |
 | --- | --- | --- |
-| Data organization | Sparse index lists, implicit indexing, stride remapping, and bank mapping | [BSA](https://arxiv.org/abs/2509.01085), [Log-linear Sparse Attention](https://arxiv.org/abs/2512.16615), [Sliding Tile Attention](https://arxiv.org/abs/2502.04507), [Generalized Neighborhood Attention](https://arxiv.org/abs/2504.16922), [CogView](https://arxiv.org/abs/2105.13290), [DiSC](https://arxiv.org/abs/2605.25798) |
-| Execution | Specialized and fused operators, tiled work, sparse mixed precision, batching, and persistent scheduling | [Jenga](https://arxiv.org/abs/2505.16864), [FlashOmni](https://arxiv.org/abs/2509.25401), [PISA](https://arxiv.org/abs/2602.01077), [FPSAttention](https://arxiv.org/abs/2506.04648), [PAROAttention](https://arxiv.org/abs/2506.16054), [PSA](https://arxiv.org/abs/2512.04025), [GRAT](https://arxiv.org/abs/2505.14687), [SPADE](https://arxiv.org/abs/2608.03335), [FG-Attn](https://arxiv.org/abs/2509.16518) |
-| Dataflow | Cooperative gathers, selective communication, prefetching, asynchronous transfer, buffering, and residency management | [DSA](https://proceedings.iclr.cc/paper_files/paper/2026/file/c3728248f3c627d1f16ca5726cdf83f5-Paper-Conference.pdf), [FG-Attn](https://arxiv.org/abs/2509.16518), [ReWorld](https://arxiv.org/abs/2608.23565), [Veda](https://arxiv.org/abs/2605.30325), [PAROAttention](https://arxiv.org/abs/2506.16054), [Sliding Tile Attention](https://arxiv.org/abs/2502.04507), [PASA](https://arxiv.org/abs/2604.12219) |
+| Data organization | Sparse index lists, implicit indexing, stride remapping, and bank mapping | [BSA][paper:arxiv:2509.01085], [Log-linear Sparse Attention][paper:arxiv:2512.16615], [Sliding Tile Attention][paper:arxiv:2502.04507], [Generalized Neighborhood Attention][paper:arxiv:2504.16922], [CogView][paper:arxiv:2105.13290], [DiSC][paper:arxiv:2605.25798] |
+| Execution | Specialized and fused operators, tiled work, sparse mixed precision, batching, and persistent scheduling | [Jenga][paper:arxiv:2505.16864], [FlashOmni][paper:arxiv:2509.25401], [PISA][paper:arxiv:2602.01077], [FPSAttention][paper:arxiv:2506.04648], [PAROAttention][paper:arxiv:2506.16054], [PSA][paper:arxiv:2512.04025], [GRAT][paper:arxiv:2505.14687], [SPADE][paper:arxiv:2608.03335], [FG-Attn][paper:arxiv:2509.16518] |
+| Dataflow | Cooperative gathers, selective communication, prefetching, asynchronous transfer, buffering, and residency management | [DSA][paper:venue:iclr-2026-dsa], [FG-Attn][paper:arxiv:2509.16518], [ReWorld][paper:arxiv:2608.23565], [Veda][paper:arxiv:2605.30325], [PAROAttention][paper:arxiv:2506.16054], [Sliding Tile Attention][paper:arxiv:2502.04507], [PASA][paper:arxiv:2604.12219] |
 
-System constraints can also change the algorithm's support. [Sliding Tile Attention](https://arxiv.org/abs/2502.04507) aligns the window to hardware tiles, [VecAttention](https://arxiv.org/abs/2603.29494) avoids sorting with a score threshold, and [ReWorld](https://arxiv.org/abs/2608.23565) bounds active GPU context with a retrievable host-memory landmark bank.
+System constraints can also change the algorithm's support. [Sliding Tile Attention][paper:arxiv:2502.04507] aligns the window to hardware tiles, [VecAttention][paper:arxiv:2603.29494] avoids sorting with a score threshold, and [ReWorld][paper:arxiv:2608.23565] bounds active GPU context with a retrievable host-memory landmark bank.
 
 ## Evaluation benchmarks and metrics
 
@@ -291,13 +319,13 @@ Report generation quality and acceleration under matched settings. Pair operator
 
 | Task | Benchmarks and datasets discussed in the survey | What to measure |
 | --- | --- | --- |
-| Text-to-image | [MS-COCO](https://arxiv.org/abs/1405.0312), [GenEval](https://arxiv.org/abs/2310.11513), [T2I-CompBench](https://arxiv.org/abs/2307.06350) | Image quality and diversity, text alignment, and compositional fidelity |
-| Video generation | [VBench](https://arxiv.org/abs/2311.17982), [VBench++](https://arxiv.org/abs/2411.13503), [EvalCrafter](https://arxiv.org/abs/2310.11440), [T2V-CompBench](https://arxiv.org/abs/2407.14505) | Visual quality, motion, temporal consistency, and prompt alignment |
-| Long and autoregressive video | [VBench-Long (Light Forcing)](https://arxiv.org/abs/2602.04789) | Identity and motion consistency over long rollouts |
-| World models | [ViewBench (ViewRoPE)](https://arxiv.org/abs/2602.07854) | Revisit fidelity, loop closure, and geometric drift |
-| Video editing | [EditVerse-Bench and FiVE-Bench (LIVEditor-14B evaluation)](https://arxiv.org/abs/2605.04569) | Edit accuracy and preservation of source content |
-| 3D and 4D | [Google Scanned Objects (LSRM evaluation)](https://arxiv.org/abs/2604.05182) | Novel-view quality and geometric fidelity |
-| Audio-driven video | [TalkShow (co-speech evaluation)](https://arxiv.org/abs/2510.02617) | Portrait quality, speech–lip synchronization, and body motion |
+| Text-to-image | [MS-COCO][paper:arxiv:1405.0312], [GenEval][paper:arxiv:2310.11513], [T2I-CompBench][paper:arxiv:2307.06350] | Image quality and diversity, text alignment, and compositional fidelity |
+| Video generation | [VBench][paper:arxiv:2311.17982], [VBench++][paper:arxiv:2411.13503], [EvalCrafter][paper:arxiv:2310.11440], [T2V-CompBench][paper:arxiv:2407.14505] | Visual quality, motion, temporal consistency, and prompt alignment |
+| Long and autoregressive video | [VBench-Long (Light Forcing)][paper:arxiv:2602.04789] | Identity and motion consistency over long rollouts |
+| World models | [ViewBench (ViewRoPE)][paper:arxiv:2602.07854] | Revisit fidelity, loop closure, and geometric drift |
+| Video editing | [EditVerse-Bench and FiVE-Bench (LIVEditor-14B evaluation)][paper:arxiv:2605.04569] | Edit accuracy and preservation of source content |
+| 3D and 4D | [Google Scanned Objects (LSRM evaluation)][paper:arxiv:2604.05182] | Novel-view quality and geometric fidelity |
+| Audio-driven video | [TalkShow (co-speech evaluation)][paper:arxiv:2510.02617] | Portrait quality, speech–lip synchronization, and body motion |
 
 Common metrics include PSNR, SSIM, and LPIPS for comparison with a paired target or dense baseline. FID, IS, and FVD for distribution-level or sample-set evaluation. Other metrics include CLIPScore, Chamfer distance, Sync-C, and Sync-D for task-specific checks. [Survey Table V](https://arxiv.org/html/2611.21029v1#S6.T5)
 
@@ -324,6 +352,8 @@ Use this index to find papers by generation task. It includes the repository's b
 
 <details>
 <summary>Image generation and editing</summary>
+
+<!-- BEGIN PAPERS: application-image -->
 
 | Year | Paper |
 | ---: | --- |
@@ -356,10 +386,14 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2019 | [Generating Long Sequences with Sparse Transformers](https://arxiv.org/abs/1904.10509) |
 | 2018 | [Image Transformer](https://arxiv.org/abs/1802.05751) |
 
+<!-- END PAPERS: application-image -->
+
 </details>
 
 <details>
 <summary>General video generation</summary>
+
+<!-- BEGIN PAPERS: application-video -->
 
 | Year | Paper |
 | ---: | --- |
@@ -398,7 +432,6 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2026 | [HEART: Exploiting Head Heterogeneity in Sparse Attention for Video Diffusion](https://arxiv.org/abs/2605.14513) |
 | 2026 | [AdaCluster: Adaptive Query-Key Clustering for Sparse Attention in Video Generation](https://arxiv.org/abs/2604.18348) |
 | 2026 | [Ride the Wave: Precision-Allocated Sparse Attention for Smooth Video Generation](https://arxiv.org/abs/2604.12219) |
-| 2026 | [QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification](https://arxiv.org/abs/2509.23681) |
 | 2026 | [Attention Sparsity is Input-Stable: Training-Free Sparse Attention for Video Generation via Offline Sparsity Profiling and Online QK Co-Clustering](https://arxiv.org/abs/2603.18636) |
 | 2026 | [SVG-EAR: Parameter-Free Linear Compensation for Sparse Video Generation via Error-aware Routing](https://arxiv.org/abs/2603.08982) |
 | 2026 | [Accelerating Text-to-Video Generation with Calibrated Sparse Attention](https://arxiv.org/abs/2603.05503) |
@@ -409,6 +442,7 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2025 | [Rectified SpaAttn: Revisiting Attention Sparsity for Efficient Video Generation](https://arxiv.org/abs/2511.19835) |
 | 2025 | [LiteAttention: A Temporal Sparse Attention for Diffusion Transformers](https://arxiv.org/abs/2511.11062) |
 | 2025 | [SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable Sparse-Linear Attention](https://arxiv.org/abs/2509.24006) |
+| 2026 | [QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification](https://arxiv.org/abs/2509.23681) |
 | 2025 | [FG-Attn: Leveraging Fine-Grained Sparse Attention in Video Diffusion Models](https://arxiv.org/abs/2509.16518) |
 | 2025 | [Bidirectional Sparse Attention for Faster Video Diffusion Training](https://arxiv.org/abs/2509.01085) |
 | 2025 | [BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation](https://arxiv.org/abs/2508.10774) |
@@ -418,8 +452,8 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2025 | [Sparse VideoGen2: Accelerate Video Generation with Sparse Attention via Semantic-Aware Permutation](https://arxiv.org/abs/2505.18875) |
 | 2025 | [VORTA: Efficient Video Diffusion via Routing Sparse Attention](https://arxiv.org/abs/2505.18809) |
 | 2025 | [Training-Free Efficient Video Generation via Dynamic Token Carving](https://arxiv.org/abs/2505.16864) |
-| 2025 | [DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance](https://arxiv.org/abs/2505.14708) |
 | 2025 | [VSA: Faster Video Diffusion with Trainable Sparse Attention](https://arxiv.org/abs/2505.13389) |
+| 2025 | [DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance](https://arxiv.org/abs/2505.14708) |
 | 2025 | [DiTFastAttnV2: Head-wise Attention Compression for Multi-Modality Diffusion Transformers](https://arxiv.org/abs/2503.22796) |
 | 2025 | [Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile](https://arxiv.org/abs/2502.06155) |
 | 2025 | [Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2502.04507) |
@@ -430,10 +464,14 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2023 | [Photorealistic Video Generation with Diffusion Models](https://arxiv.org/abs/2312.06662) |
 | 2022 | [Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation](https://arxiv.org/abs/2212.11565) |
 
+<!-- END PAPERS: application-video -->
+
 </details>
 
 <details>
 <summary>Long video generation</summary>
+
+<!-- BEGIN PAPERS: application-long-video -->
 
 | Year | Paper |
 | ---: | --- |
@@ -462,10 +500,14 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2025 | [Training-free and Adaptive Sparse Attention for Efficient Long Video Generation](https://arxiv.org/abs/2502.21079) |
 | 2024 | [Open-Sora Plan: Open-Source Large Video Generation Model](https://arxiv.org/abs/2412.00131) |
 
+<!-- END PAPERS: application-long-video -->
+
 </details>
 
 <details>
 <summary>Autoregressive and streaming video</summary>
+
+<!-- BEGIN PAPERS: application-streaming -->
 
 | Year | Paper |
 | ---: | --- |
@@ -487,10 +529,14 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2021 | [GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions](https://arxiv.org/abs/2104.14806) |
 | 2021 | [VideoGPT: Video Generation using VQ-VAE and Transformers](https://arxiv.org/abs/2104.10157) |
 
+<!-- END PAPERS: application-streaming -->
+
 </details>
 
 <details>
 <summary>Video editing, restoration, and related systems</summary>
+
+<!-- BEGIN PAPERS: application-video-editing -->
 
 | Year | Paper |
 | ---: | --- |
@@ -499,7 +545,6 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2026 | [Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation](https://arxiv.org/abs/2609.11638) |
 | 2026 | [Chorus II: Cross-Request Sparsity Reuse for Efficient Image-to-Video Generation](https://arxiv.org/abs/2606.25040) |
 | 2026 | [Sol Video Inference Engine: Agent-Native Full-Stack Acceleration Framework for Efficient Video Generation](https://arxiv.org/abs/2606.23743) |
-| 2026 | [FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution](https://openaccess.thecvf.com/content/CVPR2026/html/Zhuang_FlashVSR_Towards_Real-time_Diffusion-Based_Streaming_Video_Super_Resolution_CVPR_2026_paper.html) |
 | 2026 | [SimInsert: Seamless Video Object Insertion via Regional Sparse Attention Fusion](https://arxiv.org/abs/2605.23245) |
 | 2026 | [LIVEditor-14B: Lightning Unified Video Editing via In-Context Sparse Attention](https://arxiv.org/abs/2605.04569) |
 | 2026 | [DSA: Efficient Inference For Video Generation Models via Distributed Sparse Attention](https://proceedings.iclr.cc/paper_files/paper/2026/file/c3728248f3c627d1f16ca5726cdf83f5-Paper-Conference.pdf) |
@@ -507,15 +552,20 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2026 | [SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model](https://arxiv.org/abs/2602.21818) |
 | 2025 | [PSA: Pyramid Sparse Attention for Efficient Video Understanding and Generation](https://arxiv.org/abs/2512.04025) |
 | 2025 | [db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism](https://arxiv.org/abs/2511.23113) |
+| 2026 | [FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution](https://openaccess.thecvf.com/content/CVPR2026/html/Zhuang_FlashVSR_Towards_Real-time_Diffusion-Based_Streaming_Video_Super_Resolution_CVPR_2026_paper.html) |
 | 2025 | [FlashOmni: A Unified Sparse Attention Engine for Diffusion Transformers](https://arxiv.org/abs/2509.25401) |
 | 2025 | [DiTVR: Zero-Shot Diffusion Transformer for Video Restoration](https://arxiv.org/abs/2508.07811) |
 | 2025 | [DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training](https://arxiv.org/abs/2502.07590) |
 | 2021 | [NÜWA: Visual Synthesis Pre-training for Neural visUal World creAtion](https://arxiv.org/abs/2111.12417) |
 
+<!-- END PAPERS: application-video-editing -->
+
 </details>
 
 <details>
 <summary>World models and interactive visual generation</summary>
+
+<!-- BEGIN PAPERS: application-world-models -->
 
 | Year | Paper |
 | ---: | --- |
@@ -536,10 +586,14 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2026 | [Fast Autoregressive Video Diffusion and World Models with Temporal Cache Compression and Sparse Attention](https://arxiv.org/abs/2602.01801) |
 | 2025 | [GigaWorld-0: World Models as Data Engine to Empower Embodied AI](https://arxiv.org/abs/2511.19861) |
 
+<!-- END PAPERS: application-world-models -->
+
 </details>
 
 <details>
 <summary>3D and 4D generation</summary>
+
+<!-- BEGIN PAPERS: application-3d-4d -->
 
 | Year | Paper |
 | ---: | --- |
@@ -556,10 +610,14 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2025 | [Direct3D-S2: Gigascale 3D Generation Made Easy with Spatial Sparse Attention](https://arxiv.org/abs/2505.17412) |
 | 2025 | [Articulate That Object Part (ATOP): 3D Part Articulation via Text and Motion Personalization](https://arxiv.org/abs/2502.07278) |
 
+<!-- END PAPERS: application-3d-4d -->
+
 </details>
 
 <details>
 <summary>Portrait and audio-visual generation</summary>
+
+<!-- BEGIN PAPERS: application-audio-visual -->
 
 | Year | Paper |
 | ---: | --- |
@@ -574,6 +632,8 @@ Use this index to find papers by generation task. It includes the repository's b
 | 2025 | [TalkingMachines: Real-Time Audio-Driven FaceTime-Style Video via Autoregressive Diffusion Models](https://arxiv.org/abs/2506.03099) |
 | 2023 | [MM-Diffusion: Learning Multi-Modal Diffusion Models for Joint Audio and Video Generation](https://arxiv.org/abs/2212.09478) |
 
+<!-- END PAPERS: application-audio-visual -->
+
 </details>
 
 ## Additional references
@@ -582,6 +642,8 @@ These papers extend the reading list with further visual methods and work on spa
 
 <details>
 <summary>Training-free algorithms</summary>
+
+<!-- BEGIN PAPERS: related-training-free -->
 
 | Year | Paper |
 | ---: | --- |
@@ -600,10 +662,14 @@ These papers extend the reading list with further visual methods and work on spa
 | 2024 | [SampleAttention: Near-Lossless Acceleration of Long Context LLM Inference with Adaptive Structured Sparse Attention](https://arxiv.org/abs/2406.15486) |
 | 2024 | [Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference](https://arxiv.org/abs/2406.10774) |
 
+<!-- END PAPERS: related-training-free -->
+
 </details>
 
 <details>
 <summary>Trainable and native algorithms</summary>
+
+<!-- BEGIN PAPERS: related-trainable -->
 
 | Year | Paper |
 | ---: | --- |
@@ -637,10 +703,14 @@ These papers extend the reading list with further visual methods and work on spa
 | 2019 | [Blockwise Self-Attention for Long Document Understanding](https://arxiv.org/abs/1911.02972) |
 | 2019 | [Adaptive Attention Span in Transformers](https://arxiv.org/abs/1905.07799) |
 
+<!-- END PAPERS: related-trainable -->
+
 </details>
 
 <details>
 <summary>Systems and hardware</summary>
+
+<!-- BEGIN PAPERS: related-systems -->
 
 | Year | Paper |
 | ---: | --- |
@@ -674,22 +744,24 @@ These papers extend the reading list with further visual methods and work on spa
 | 2025 | [SparseServe: Unlocking Parallelism for Dynamic Sparse Attention in Long-Context LLM Serving](https://arxiv.org/abs/2509.24626) |
 | 2025 | [FSA: An Alternative Efficient Implementation of Native Sparse Attention Kernel](https://arxiv.org/abs/2508.18224) |
 | 2025 | [Fused3S: Fast Sparse Attention on Tensor Cores](https://arxiv.org/abs/2505.08098) |
-| 2025 | [SPLAT: A framework for optimised GPU code-generation for SParse reguLar ATtention](https://arxiv.org/abs/2407.16847) |
 | 2025 | [Progressive Sparse Attention: Algorithm and System Co-design for Efficient Attention in LLM Serving](https://arxiv.org/abs/2503.00392) |
 | 2025 | [LServe: Efficient Long-sequence LLM Serving with Unified Sparse Attention](https://arxiv.org/abs/2502.14866) |
+| 2025 | [SPLAT: A framework for optimised GPU code-generation for SParse reguLar ATtention](https://arxiv.org/abs/2407.16847) |
 | 2022 | [CPSAA: Accelerating Sparse Attention using Crossbar-based Processing-In-Memory Architecture](https://arxiv.org/abs/2210.06696) |
 | 2022 | [Adaptable Butterfly Accelerator for Attention-based NNs via Hardware and Algorithm Co-design](https://arxiv.org/abs/2209.09570) |
 | 2022 | [Sparse Attention Acceleration with Synergistic In-Memory Pruning and On-Chip Recomputation](https://arxiv.org/abs/2209.00606) |
 | 2022 | [A Length Adaptive Algorithm-Hardware Co-design of Transformer on FPGA Through Sparse Attention and Dynamic Pipelining](https://arxiv.org/abs/2208.03646) |
 | 2022 | [SALO: An Efficient Spatial Accelerator Enabling Hybrid Sparse Attention Mechanisms for Long Sequences](https://arxiv.org/abs/2206.14550) |
 | 2022 | [Accelerating Attention through Gradient-Based Learned Runtime Pruning](https://arxiv.org/abs/2204.03227) |
-| 2022 | [Dynamic N:M Fine-grained Structured Sparse Attention Mechanism](https://arxiv.org/abs/2203.00091) |
 | 2022 | [DOTA: Detect and Omit Weak Attentions for Scalable Transformer Acceleration](https://researchportal.hkust.edu.hk/en/publications/dota-detect-and-omitweak-attentions-for-scalable-transformer-acce/) |
+| 2022 | [Dynamic N:M Fine-grained Structured Sparse Attention Mechanism](https://arxiv.org/abs/2203.00091) |
 | 2021 | [Transformer Acceleration with Dynamic Sparse Attention](https://arxiv.org/abs/2110.11299) |
 | 2021 | [Energon: Towards Efficient Acceleration of Transformers Using Dynamic Sparse Attention](https://arxiv.org/abs/2110.09310) |
 | 2021 | [Sanger: A Co-Design Framework for Enabling Sparse Attention using Reconfigurable Architecture](https://liqianglu-zju.github.io/files/conference/2021/MICRO_2021_Sanger.pdf) |
 | 2021 | [ELSA: Hardware-Software Co-design for Efficient, Lightweight Self-Attention Mechanism in Neural Networks](https://taejunham.github.io/data/elsa_isca21.pdf) |
 | 2020 | [A³: Accelerating Attention Mechanisms in Neural Networks with Approximation](https://arxiv.org/abs/2002.10941) |
+
+<!-- END PAPERS: related-systems -->
 
 </details>
 
@@ -707,3 +779,117 @@ These papers extend the reading list with further visual methods and work on spa
   url           = {https://arxiv.org/abs/2611.21029}
 }
 ```
+
+<!-- BEGIN PAPERS: references -->
+
+[paper:arxiv:1405.0312]: <https://arxiv.org/abs/1405.0312>
+[paper:arxiv:1802.05751]: <https://arxiv.org/abs/1802.05751>
+[paper:arxiv:1904.10509]: <https://arxiv.org/abs/1904.10509>
+[paper:arxiv:2001.04451]: <https://arxiv.org/abs/2001.04451>
+[paper:arxiv:2003.05997]: <https://arxiv.org/abs/2003.05997>
+[paper:arxiv:2012.07288]: <https://arxiv.org/abs/2012.07288>
+[paper:arxiv:2105.13290]: <https://arxiv.org/abs/2105.13290>
+[paper:arxiv:2207.06124]: <https://arxiv.org/abs/2207.06124>
+[paper:arxiv:2307.06350]: <https://arxiv.org/abs/2307.06350>
+[paper:arxiv:2310.11440]: <https://arxiv.org/abs/2310.11440>
+[paper:arxiv:2310.11513]: <https://arxiv.org/abs/2310.11513>
+[paper:arxiv:2311.17982]: <https://arxiv.org/abs/2311.17982>
+[paper:arxiv:2406.08552]: <https://arxiv.org/abs/2406.08552>
+[paper:arxiv:2407.14505]: <https://arxiv.org/abs/2407.14505>
+[paper:arxiv:2409.04005]: <https://arxiv.org/abs/2409.04005>
+[paper:arxiv:2411.13503]: <https://arxiv.org/abs/2411.13503>
+[paper:arxiv:2411.17178]: <https://arxiv.org/abs/2411.17178>
+[paper:arxiv:2412.09828]: <https://arxiv.org/abs/2412.09828>
+[paper:arxiv:2412.16112]: <https://arxiv.org/abs/2412.16112>
+[paper:arxiv:2502.01776]: <https://arxiv.org/abs/2502.01776>
+[paper:arxiv:2502.04507]: <https://arxiv.org/abs/2502.04507>
+[paper:arxiv:2502.07590]: <https://arxiv.org/abs/2502.07590>
+[paper:arxiv:2502.18137]: <https://arxiv.org/abs/2502.18137>
+[paper:arxiv:2502.21079]: <https://arxiv.org/abs/2502.21079>
+[paper:arxiv:2503.07677]: <https://arxiv.org/abs/2503.07677>
+[paper:arxiv:2503.20314]: <https://arxiv.org/abs/2503.20314>
+[paper:arxiv:2504.16922]: <https://arxiv.org/abs/2504.16922>
+[paper:arxiv:2505.13389]: <https://arxiv.org/abs/2505.13389>
+[paper:arxiv:2505.14687]: <https://arxiv.org/abs/2505.14687>
+[paper:arxiv:2505.14708]: <https://arxiv.org/abs/2505.14708>
+[paper:arxiv:2505.16864]: <https://arxiv.org/abs/2505.16864>
+[paper:arxiv:2505.18875]: <https://arxiv.org/abs/2505.18875>
+[paper:arxiv:2505.21036]: <https://arxiv.org/abs/2505.21036>
+[paper:arxiv:2505.22918]: <https://arxiv.org/abs/2505.22918>
+[paper:arxiv:2506.03065]: <https://arxiv.org/abs/2506.03065>
+[paper:arxiv:2506.03275]: <https://arxiv.org/abs/2506.03275>
+[paper:arxiv:2506.04648]: <https://arxiv.org/abs/2506.04648>
+[paper:arxiv:2506.16054]: <https://arxiv.org/abs/2506.16054>
+[paper:arxiv:2506.18226]: <https://arxiv.org/abs/2506.18226>
+[paper:arxiv:2506.23858]: <https://arxiv.org/abs/2506.23858>
+[paper:arxiv:2508.21058]: <https://arxiv.org/abs/2508.21058>
+[paper:arxiv:2509.01085]: <https://arxiv.org/abs/2509.01085>
+[paper:arxiv:2509.16518]: <https://arxiv.org/abs/2509.16518>
+[paper:arxiv:2509.23681]: <https://arxiv.org/abs/2509.23681>
+[paper:arxiv:2509.24006]: <https://arxiv.org/abs/2509.24006>
+[paper:arxiv:2509.25401]: <https://arxiv.org/abs/2509.25401>
+[paper:arxiv:2509.26538]: <https://arxiv.org/abs/2509.26538>
+[paper:arxiv:2510.02617]: <https://arxiv.org/abs/2510.02617>
+[paper:arxiv:2510.18692]: <https://arxiv.org/abs/2510.18692>
+[paper:arxiv:2511.11062]: <https://arxiv.org/abs/2511.11062>
+[paper:arxiv:2511.19835]: <https://arxiv.org/abs/2511.19835>
+[paper:arxiv:2512.04025]: <https://arxiv.org/abs/2512.04025>
+[paper:arxiv:2512.05754]: <https://arxiv.org/abs/2512.05754>
+[paper:arxiv:2512.16615]: <https://arxiv.org/abs/2512.16615>
+[paper:arxiv:2512.24086]: <https://arxiv.org/abs/2512.24086>
+[paper:arxiv:2601.11641]: <https://arxiv.org/abs/2601.11641>
+[paper:arxiv:2602.01077]: <https://arxiv.org/abs/2602.01077>
+[paper:arxiv:2602.01801]: <https://arxiv.org/abs/2602.01801>
+[paper:arxiv:2602.04361]: <https://arxiv.org/abs/2602.04361>
+[paper:arxiv:2602.04789]: <https://arxiv.org/abs/2602.04789>
+[paper:arxiv:2602.07854]: <https://arxiv.org/abs/2602.07854>
+[paper:arxiv:2602.13515]: <https://arxiv.org/abs/2602.13515>
+[paper:arxiv:2603.05503]: <https://arxiv.org/abs/2603.05503>
+[paper:arxiv:2603.08982]: <https://arxiv.org/abs/2603.08982>
+[paper:arxiv:2603.12575]: <https://arxiv.org/abs/2603.12575>
+[paper:arxiv:2603.18636]: <https://arxiv.org/abs/2603.18636>
+[paper:arxiv:2603.29494]: <https://arxiv.org/abs/2603.29494>
+[paper:arxiv:2604.05182]: <https://arxiv.org/abs/2604.05182>
+[paper:arxiv:2604.12219]: <https://arxiv.org/abs/2604.12219>
+[paper:arxiv:2604.18348]: <https://arxiv.org/abs/2604.18348>
+[paper:arxiv:2604.20470]: <https://arxiv.org/abs/2604.20470>
+[paper:arxiv:2604.21221]: <https://arxiv.org/abs/2604.21221>
+[paper:arxiv:2605.04569]: <https://arxiv.org/abs/2605.04569>
+[paper:arxiv:2605.14513]: <https://arxiv.org/abs/2605.14513>
+[paper:arxiv:2605.18346]: <https://arxiv.org/abs/2605.18346>
+[paper:arxiv:2605.22718]: <https://arxiv.org/abs/2605.22718>
+[paper:arxiv:2605.23445]: <https://arxiv.org/abs/2605.23445>
+[paper:arxiv:2605.25798]: <https://arxiv.org/abs/2605.25798>
+[paper:arxiv:2605.30325]: <https://arxiv.org/abs/2605.30325>
+[paper:arxiv:2605.31057]: <https://arxiv.org/abs/2605.31057>
+[paper:arxiv:2605.31158]: <https://arxiv.org/abs/2605.31158>
+[paper:arxiv:2606.16317]: <https://arxiv.org/abs/2606.16317>
+[paper:arxiv:2606.23019]: <https://arxiv.org/abs/2606.23019>
+[paper:arxiv:2606.25040]: <https://arxiv.org/abs/2606.25040>
+[paper:arxiv:2607.03012]: <https://arxiv.org/abs/2607.03012>
+[paper:arxiv:2607.16190]: <https://arxiv.org/abs/2607.16190>
+[paper:arxiv:2607.20125]: <https://arxiv.org/abs/2607.20125>
+[paper:arxiv:2607.24027]: <https://arxiv.org/abs/2607.24027>
+[paper:arxiv:2607.26037]: <https://arxiv.org/abs/2607.26037>
+[paper:arxiv:2608.02504]: <https://arxiv.org/abs/2608.02504>
+[paper:arxiv:2608.03335]: <https://arxiv.org/abs/2608.03335>
+[paper:arxiv:2608.10519]: <https://arxiv.org/abs/2608.10519>
+[paper:arxiv:2608.12032]: <https://arxiv.org/abs/2608.12032>
+[paper:arxiv:2608.12780]: <https://arxiv.org/abs/2608.12780>
+[paper:arxiv:2608.18484]: <https://arxiv.org/abs/2608.18484>
+[paper:arxiv:2608.23565]: <https://arxiv.org/abs/2608.23565>
+[paper:arxiv:2608.26965]: <https://arxiv.org/abs/2608.26965>
+[paper:arxiv:2609.23169]: <https://arxiv.org/abs/2609.23169>
+[paper:arxiv:2609.34606]: <https://arxiv.org/abs/2609.34606>
+[paper:arxiv:2610.21129]: <https://arxiv.org/abs/2610.21129>
+[paper:arxiv:2610.22311]: <https://arxiv.org/abs/2610.22311>
+[paper:arxiv:2610.22975]: <https://arxiv.org/abs/2610.22975>
+[paper:arxiv:2610.26244]: <https://arxiv.org/abs/2610.26244>
+[paper:arxiv:2610.29441]: <https://arxiv.org/abs/2610.29441>
+[paper:arxiv:2611.05917]: <https://arxiv.org/abs/2611.05917>
+[paper:arxiv:2611.10448]: <https://arxiv.org/abs/2611.10448>
+[paper:arxiv:2611.20307]: <https://arxiv.org/abs/2611.20307>
+[paper:venue:cvpr-2026-rapid]: <https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_RAPID_Reusing_Attention_Sparsity_with_Inter-step_Adaptation_for_Efficient_Video_CVPR_2026_paper.pdf>
+[paper:venue:iclr-2026-dsa]: <https://proceedings.iclr.cc/paper_files/paper/2026/file/c3728248f3c627d1f16ca5726cdf83f5-Paper-Conference.pdf>
+
+<!-- END PAPERS: references -->
