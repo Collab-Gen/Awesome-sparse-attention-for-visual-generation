@@ -1,0 +1,2586 @@
+[
+  {
+    "id": "arxiv:1405.0312",
+    "title": "Microsoft COCO: Common Objects in Context",
+    "year": 2014,
+    "first_public": "2014-05-01",
+    "sections": []
+  },
+  {
+    "id": "arxiv:1802.05751",
+    "title": "Image Transformer",
+    "year": 2018,
+    "first_public": "2018-02-15",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:1904.10509",
+    "title": "Generating Long Sequences with Sparse Transformers",
+    "year": 2019,
+    "first_public": "2019-04-23",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:1905.07799",
+    "title": "Adaptive Attention Span in Transformers",
+    "year": 2019,
+    "first_public": "2019-05-19",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:1911.02972",
+    "title": "Blockwise Self-Attention for Long Document Understanding",
+    "year": 2019,
+    "first_public": "2019-11-07",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:1911.12287",
+    "title": "Your Local GAN: Designing Two Dimensional Local Attention Mechanisms for Generative Models",
+    "year": 2019,
+    "first_public": "2019-11-27",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2001.04451",
+    "title": "Reformer: The Efficient Transformer",
+    "year": 2020,
+    "first_public": "2020-01-13",
+    "sections": [
+      "mechanism-clustering"
+    ]
+  },
+  {
+    "id": "arxiv:2002.10941",
+    "title": "A³: Accelerating Attention Mechanisms in Neural Networks with Approximation",
+    "year": 2020,
+    "first_public": "2020-02-22",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2002.11296",
+    "title": "Sparse Sinkhorn Attention",
+    "year": 2020,
+    "first_public": "2020-02-26",
+    "sections": [
+      "mechanism-learned",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2003.05997",
+    "title": "Efficient Content-Based Sparse Attention with Routing Transformers",
+    "year": 2020,
+    "first_public": "2020-03-12",
+    "sections": [
+      "mechanism-clustering",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2004.05150",
+    "title": "Longformer: The Long-Document Transformer",
+    "year": 2020,
+    "first_public": "2020-04-10",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2004.08483",
+    "title": "ETC: Encoding Long and Structured Inputs in Transformers",
+    "year": 2020,
+    "first_public": "2020-04-17",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2007.14062",
+    "title": "Big Bird: Transformers for Longer Sequences",
+    "year": 2020,
+    "first_public": "2020-07-28",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2012.07288",
+    "title": "Semantic Layout Manipulation with High-Resolution Sparse Attention",
+    "year": 2020,
+    "first_public": "2020-12-14",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2102.12092",
+    "title": "Zero-Shot Text-to-Image Generation",
+    "year": 2021,
+    "first_public": "2021-02-24",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2104.10157",
+    "title": "VideoGPT: Video Generation using VQ-VAE and Transformers",
+    "year": 2021,
+    "first_public": "2021-04-20",
+    "sections": [
+      "mechanism-structural",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2104.14806",
+    "title": "GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions",
+    "year": 2021,
+    "first_public": "2021-04-30",
+    "sections": [
+      "mechanism-structural",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2105.13290",
+    "title": "CogView: Mastering Text-to-Image Generation via Transformers",
+    "year": 2021,
+    "first_public": "2021-05-26",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2107.05768",
+    "title": "Combiner: Full Attention Transformer with Sparse Computation Cost",
+    "year": 2021,
+    "first_public": "2021-07-12",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2110.09310",
+    "title": "Energon: Towards Efficient Acceleration of Transformers Using Dynamic Sparse Attention",
+    "year": 2021,
+    "first_public": "2021-10-18",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2110.11299",
+    "title": "Transformer Acceleration with Dynamic Sparse Attention",
+    "year": 2021,
+    "first_public": "2021-10-21",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2111.12417",
+    "title": "NÜWA: Visual Synthesis Pre-training for Neural visUal World creAtion",
+    "year": 2021,
+    "first_public": "2021-11-24",
+    "sections": [
+      "mechanism-structural",
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2111.13196",
+    "title": "SwinBERT: End-to-End Transformers with Sparse Attention for Video Captioning",
+    "year": 2022,
+    "first_public": "2021-11-25",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2203.00091",
+    "title": "Dynamic N:M Fine-grained Structured Sparse Attention Mechanism",
+    "year": 2022,
+    "first_public": "2022-02-28",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2204.03227",
+    "title": "Accelerating Attention through Gradient-Based Learned Runtime Pruning",
+    "year": 2022,
+    "first_public": "2022-04-07",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2206.14550",
+    "title": "SALO: An Efficient Spatial Accelerator Enabling Hybrid Sparse Attention Mechanisms for Long Sequences",
+    "year": 2022,
+    "first_public": "2022-06-29",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2207.06124",
+    "title": "DynaST: Dynamic Sparse Transformer for Exemplar-Guided Image Generation",
+    "year": 2022,
+    "first_public": "2022-07-13",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2207.09814",
+    "title": "NUWA-Infinity: Autoregressive over Autoregressive Generation for Infinite Visual Synthesis",
+    "year": 2022,
+    "first_public": "2022-07-20",
+    "sections": [
+      "mechanism-structural",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2208.03646",
+    "title": "A Length Adaptive Algorithm-Hardware Co-design of Transformer on FPGA Through Sparse Attention and Dynamic Pipelining",
+    "year": 2022,
+    "first_public": "2022-08-07",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2209.00606",
+    "title": "Sparse Attention Acceleration with Synergistic In-Memory Pruning and On-Chip Recomputation",
+    "year": 2022,
+    "first_public": "2022-09-01",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2209.09570",
+    "title": "Adaptable Butterfly Accelerator for Attention-based NNs via Hardware and Algorithm Co-design",
+    "year": 2022,
+    "first_public": "2022-09-20",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2210.06696",
+    "title": "CPSAA: Accelerating Sparse Attention using Crossbar-based Processing-In-Memory Architecture",
+    "year": 2022,
+    "first_public": "2022-10-13",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2212.09478",
+    "title": "MM-Diffusion: Learning Multi-Modal Diffusion Models for Joint Audio and Video Generation",
+    "year": 2023,
+    "first_public": "2022-12-19",
+    "sections": [
+      "mechanism-structural",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2212.11565",
+    "title": "Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation",
+    "year": 2022,
+    "first_public": "2022-12-22",
+    "sections": [
+      "mechanism-structural",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2307.02486",
+    "title": "LongNet: Scaling Transformers to 1,000,000,000 Tokens",
+    "year": 2023,
+    "first_public": "2023-07-05",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2307.06350",
+    "title": "T2I-CompBench++: An Enhanced and Comprehensive Benchmark for Compositional Text-to-image Generation",
+    "year": 2023,
+    "first_public": "2023-07-12",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2310.11440",
+    "title": "EvalCrafter: Benchmarking and Evaluating Large Video Generation Models",
+    "year": 2023,
+    "first_public": "2023-10-17",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2310.11513",
+    "title": "GenEval: An Object-Focused Framework for Evaluating Text-to-Image Alignment",
+    "year": 2023,
+    "first_public": "2023-10-17",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2311.17982",
+    "title": "VBench: Comprehensive Benchmark Suite for Video Generative Models",
+    "year": 2023,
+    "first_public": "2023-11-29",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2312.06662",
+    "title": "Photorealistic Video Generation with Diffusion Models",
+    "year": 2023,
+    "first_public": "2023-12-11",
+    "sections": [
+      "mechanism-structural",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2406.08552",
+    "title": "DiTFastAttn: Attention Compression for Diffusion Transformer Models",
+    "year": 2024,
+    "first_public": "2024-06-12",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2406.10774",
+    "title": "Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference",
+    "year": 2024,
+    "first_public": "2024-06-16",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2406.15486",
+    "title": "SampleAttention: Near-Lossless Acceleration of Long Context LLM Inference with Adaptive Structured Sparse Attention",
+    "year": 2024,
+    "first_public": "2024-06-17",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2406.16747",
+    "title": "Sparser is Faster and Less is More: Efficient Sparse Attention for Long-Range Transformers",
+    "year": 2024,
+    "first_public": "2024-06-24",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2407.02490",
+    "title": "MInference 1.0: Accelerating Pre-filling for Long-Context LLMs via Dynamic Sparse Attention",
+    "year": 2024,
+    "first_public": "2024-07-02",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2407.14505",
+    "title": "T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation",
+    "year": 2024,
+    "first_public": "2024-07-19",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2407.16847",
+    "title": "SPLAT: A framework for optimised GPU code-generation for SParse reguLar ATtention",
+    "year": 2025,
+    "first_public": "2024-07-23",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2408.07092",
+    "title": "Post-Training Sparse Attention with Double Sparsity",
+    "year": 2024,
+    "first_public": "2024-08-11",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2409.04005",
+    "title": "Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task",
+    "year": 2024,
+    "first_public": "2024-09-06",
+    "sections": [
+      "mechanism-structural",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2410.13276",
+    "title": "SeerAttention: Learning Intrinsic Sparse Attention in Your LLMs",
+    "year": 2024,
+    "first_public": "2024-10-17",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2411.13503",
+    "title": "VBench++: Comprehensive and Versatile Benchmark Suite for Video Generative Models",
+    "year": 2024,
+    "first_public": "2024-11-20",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2411.17178",
+    "title": "LiteVAR: Compressing Visual Autoregressive Modelling with Efficient Attention and Quantization",
+    "year": 2024,
+    "first_public": "2024-11-26",
+    "sections": [
+      "mechanism-calibrated",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2412.00131",
+    "title": "Open-Sora Plan: Open-Source Large Video Generation Model",
+    "year": 2024,
+    "first_public": "2024-11-28",
+    "sections": [
+      "mechanism-structural",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2412.09828",
+    "title": "MSC: Multi-Scale Spatio-Temporal Causal Attention for Autoregressive Video Diffusion",
+    "year": 2024,
+    "first_public": "2024-12-13",
+    "sections": [
+      "mechanism-structural",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2412.16112",
+    "title": "CLEAR: Conv-Like Linearization Revs Pre-Trained Diffusion Transformers Up",
+    "year": 2024,
+    "first_public": "2024-12-20",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2412.20404",
+    "title": "Open-Sora: Democratizing Efficient Video Production for All",
+    "year": 2024,
+    "first_public": "2024-12-29",
+    "sections": [
+      "mechanism-structural",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2502.01776",
+    "title": "Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity",
+    "year": 2025,
+    "first_public": "2025-02-03",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2502.02770",
+    "title": "Twilight: Adaptive Attention Sparsity with Hierarchical Top-p Pruning",
+    "year": 2025,
+    "first_public": "2025-02-04",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2502.04507",
+    "title": "Fast Video Generation with Sliding Tile Attention",
+    "year": 2025,
+    "first_public": "2025-02-06",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ],
+    "featured": {
+      "name": "Sliding Tile Attention",
+      "note": "Prescribed spatiotemporal windows aligned to hardware tiles"
+    },
+    "code": {
+      "label": "FastVideo",
+      "url": "https://github.com/hao-ai-lab/FastVideo"
+    }
+  },
+  {
+    "id": "arxiv:2502.06155",
+    "title": "Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile",
+    "year": 2025,
+    "first_public": "2025-02-10",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2502.07278",
+    "title": "Articulate That Object Part (ATOP): 3D Part Articulation via Text and Motion Personalization",
+    "year": 2025,
+    "first_public": "2025-02-11",
+    "sections": [
+      "application-3d-4d",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2502.07590",
+    "title": "DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training",
+    "year": 2025,
+    "first_public": "2025-02-11",
+    "sections": [
+      "mechanism-clustering",
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2502.11089",
+    "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-02-16",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2502.13189",
+    "title": "MoBA: Mixture of Block Attention for Long-Context LLMs",
+    "year": 2025,
+    "first_public": "2025-02-18",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2502.14866",
+    "title": "LServe: Efficient Long-sequence LLM Serving with Unified Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-02-20",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2502.18137",
+    "title": "SpargeAttention: Accurate and Training-free Sparse Attention Accelerating Any Model Inference",
+    "year": 2025,
+    "first_public": "2025-02-25",
+    "sections": [
+      "mechanism-pooling"
+    ]
+  },
+  {
+    "id": "arxiv:2502.20766",
+    "title": "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+    "year": 2025,
+    "first_public": "2025-02-28",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2502.21079",
+    "title": "Training-free and Adaptive Sparse Attention for Efficient Long Video Generation",
+    "year": 2025,
+    "first_public": "2025-02-28",
+    "sections": [
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2503.00392",
+    "title": "Progressive Sparse Attention: Algorithm and System Co-design for Efficient Attention in LLM Serving",
+    "year": 2025,
+    "first_public": "2025-03-01",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2503.07677",
+    "title": "PLADIS: Pushing the Limits of Attention in Diffusion Models at Inference Time by Leveraging Sparsity",
+    "year": 2025,
+    "first_public": "2025-03-10",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2503.16428",
+    "title": "XAttention: Block Sparse Attention with Antidiagonal Scoring",
+    "year": 2025,
+    "first_public": "2025-03-20",
+    "sections": [
+      "mechanism-sampling"
+    ]
+  },
+  {
+    "id": "arxiv:2503.20314",
+    "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+    "year": 2025,
+    "first_public": "2025-03-26",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2503.22796",
+    "title": "DiTFastAttnV2: Head-wise Attention Compression for Multi-Modality Diffusion Transformers",
+    "year": 2025,
+    "first_public": "2025-03-28",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2504.16922",
+    "title": "Generalized Neighborhood Attention: Multi-dimensional Sparse Attention at the Speed of Light",
+    "year": 2025,
+    "first_public": "2025-04-23",
+    "sections": [],
+    "featured": {
+      "name": "Generalized Neighborhood Attention",
+      "note": "Kernel support for multidimensional sparse neighborhoods"
+    },
+    "code": {
+      "label": "NATTEN",
+      "url": "https://github.com/SHI-Labs/NATTEN"
+    }
+  },
+  {
+    "id": "arxiv:2505.00315",
+    "title": "Mixture of Sparse Attention: Content-Based Learnable Sparse Attention via Expert-Choice Routing",
+    "year": 2025,
+    "first_public": "2025-05-01",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2505.08098",
+    "title": "Fused3S: Fast Sparse Attention on Tensor Cores",
+    "year": 2025,
+    "first_public": "2025-05-12",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2505.11254",
+    "title": "Delta Attention: Fast and Accurate Sparse Attention Inference by Delta Correction",
+    "year": 2025,
+    "first_public": "2025-05-16",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2505.13389",
+    "title": "VSA: Faster Video Diffusion with Trainable Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-05-19",
+    "sections": [
+      "mechanism-pooling",
+      "application-video"
+    ],
+    "featured": {
+      "name": "VSA",
+      "note": "End-to-end training with coarse selection and fine-grained attention inside selected tiles"
+    },
+    "code": {
+      "label": "FastVideo",
+      "url": "https://github.com/hao-ai-lab/FastVideo"
+    }
+  },
+  {
+    "id": "arxiv:2505.14687",
+    "title": "Grouping First, Attending Smartly: Training-Free Acceleration for Diffusion Transformers",
+    "year": 2025,
+    "first_public": "2025-05-20",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2505.14708",
+    "title": "DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance",
+    "year": 2025,
+    "first_public": "2025-05-17",
+    "sections": [
+      "mechanism-pooling",
+      "application-video"
+    ],
+    "featured": {
+      "name": "DraftAttention",
+      "note": "Pooled queries and keys estimate which regions to retain"
+    },
+    "code": {
+      "label": "DraftAttention",
+      "url": "https://github.com/shawnricecake/draft-attention"
+    }
+  },
+  {
+    "id": "arxiv:2505.16864",
+    "title": "Training-Free Efficient Video Generation via Dynamic Token Carving",
+    "year": 2025,
+    "first_public": "2025-05-22",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2505.17412",
+    "title": "Direct3D-S2: Gigascale 3D Generation Made Easy with Spatial Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-05-23",
+    "sections": [
+      "mechanism-learned",
+      "application-3d-4d"
+    ],
+    "featured": {
+      "name": "Direct3D-S2",
+      "note": "Spatial block selection in sparse 3D volumes"
+    },
+    "code": {
+      "label": "Direct3D-S2",
+      "url": "https://github.com/DreamTechAI/Direct3D-S2"
+    }
+  },
+  {
+    "id": "arxiv:2505.18809",
+    "title": "VORTA: Efficient Video Diffusion via Routing Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-05-24",
+    "sections": [
+      "application-video",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2505.18875",
+    "title": "Sparse VideoGen2: Accelerate Video Generation with Sparse Attention via Semantic-Aware Permutation",
+    "year": 2025,
+    "first_public": "2025-05-24",
+    "sections": [
+      "mechanism-clustering",
+      "application-video"
+    ],
+    "featured": {
+      "name": "Sparse VideoGen2",
+      "note": "Semantic clustering and token permutation for variable-length sparse blocks"
+    },
+    "code": {
+      "label": "Sparse VideoGen",
+      "url": "https://github.com/svg-project/Sparse-VideoGen"
+    }
+  },
+  {
+    "id": "arxiv:2505.21036",
+    "title": "RainFusion: Adaptive Video Generation Acceleration via Multi-Dimensional Visual Redundancy",
+    "year": 2025,
+    "first_public": "2025-05-27",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2505.22918",
+    "title": "Re-ttention: Ultra Sparse Visual Generation via Attention Statistical Reshape",
+    "year": 2025,
+    "first_public": "2025-05-28",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2506.03065",
+    "title": "Sparse-vDiT: Unleashing the Power of Sparse Attention to Accelerate Video Diffusion Transformers",
+    "year": 2025,
+    "first_public": "2025-06-03",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2506.03099",
+    "title": "TalkingMachines: Real-Time Audio-Driven FaceTime-Style Video via Autoregressive Diffusion Models",
+    "year": 2025,
+    "first_public": "2025-06-03",
+    "sections": [
+      "mechanism-structural",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2506.03275",
+    "title": "Chipmunk: Training-Free Acceleration of Diffusion Transformers with Dynamic Column-Sparse Deltas",
+    "year": 2025,
+    "first_public": "2025-06-03",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2506.04421",
+    "title": "HMAR: Efficient Hierarchical Masked Auto-Regressive Image Generation",
+    "year": 2025,
+    "first_public": "2025-06-04",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2506.04648",
+    "title": "FPSAttention: Training-Aware FP8 and Sparsity Co-Design for Fast Video Diffusion",
+    "year": 2025,
+    "first_public": "2025-06-05",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2506.12541",
+    "title": "BSA: Ball Sparse Attention for Large-scale Geometries",
+    "year": 2025,
+    "first_public": "2025-06-14",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2506.16054",
+    "title": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models",
+    "year": 2025,
+    "first_public": "2025-06-19",
+    "sections": [
+      "mechanism-calibrated"
+    ]
+  },
+  {
+    "id": "arxiv:2506.18226",
+    "title": "Make It Efficient: Dynamic Sparse Attention for Autoregressive Image Generation",
+    "year": 2025,
+    "first_public": "2025-06-23",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2506.19852",
+    "title": "Radial Attention: O(n log n) Sparse Attention with Energy Decay for Long Video Generation",
+    "year": 2025,
+    "first_public": "2025-06-24",
+    "sections": [
+      "mechanism-structural",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2506.23858",
+    "title": "VMoBA: Mixture-of-Block Attention for Video Diffusion Models",
+    "year": 2025,
+    "first_public": "2025-06-30",
+    "sections": [
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2508.07811",
+    "title": "DiTVR: Zero-Shot Diffusion Transformer for Video Restoration",
+    "year": 2025,
+    "first_public": "2025-08-11",
+    "sections": [
+      "application-video-editing",
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2508.10774",
+    "title": "BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation",
+    "year": 2025,
+    "first_public": "2025-08-14",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2508.12969",
+    "title": "Compact Attention: Exploiting Structured Spatio-Temporal Sparsity for Fast Video Generation",
+    "year": 2025,
+    "first_public": "2025-08-18",
+    "sections": [
+      "mechanism-calibrated",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2508.18224",
+    "title": "FSA: An Alternative Efficient Implementation of Native Sparse Attention Kernel",
+    "year": 2025,
+    "first_public": "2025-08-25",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2508.21058",
+    "title": "Mixture of Contexts for Long Video Generation",
+    "year": 2025,
+    "first_public": "2025-08-28",
+    "sections": [
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2509.01085",
+    "title": "Bidirectional Sparse Attention for Faster Video Diffusion Training",
+    "year": 2025,
+    "first_public": "2025-09-01",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2509.16518",
+    "title": "FG-Attn: Leveraging Fine-Grained Sparse Attention in Video Diffusion Models",
+    "year": 2025,
+    "first_public": "2025-09-20",
+    "sections": [
+      "mechanism-pooling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2509.23681",
+    "title": "QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification",
+    "year": 2026,
+    "first_public": "2025-09-28",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2509.24006",
+    "title": "SLA: Beyond Sparsity in Diffusion Transformers via Fine-Tunable Sparse-Linear Attention",
+    "year": 2025,
+    "first_public": "2025-09-28",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2509.24014",
+    "title": "SparseD: Sparse Attention for Diffusion Language Models",
+    "year": 2025,
+    "first_public": "2025-09-28",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2509.24626",
+    "title": "SparseServe: Unlocking Parallelism for Dynamic Sparse Attention in Long-Context LLM Serving",
+    "year": 2025,
+    "first_public": "2025-09-29",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2509.25401",
+    "title": "FlashOmni: A Unified Sparse Attention Engine for Diffusion Transformers",
+    "year": 2025,
+    "first_public": "2025-09-29",
+    "sections": [
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2509.26538",
+    "title": "HilbertA: Hilbert Attention for Image Generation with Diffusion Models",
+    "year": 2025,
+    "first_public": "2025-09-30",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2510.02617",
+    "title": "Input-Aware Sparse Attention for Real-Time Co-Speech Video Generation",
+    "year": 2025,
+    "first_public": "2025-10-02",
+    "sections": [
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2510.12747",
+    "title": "FlashVSR: Towards Real-Time Diffusion-Based Streaming Video Super-Resolution",
+    "year": 2026,
+    "first_public": "2025-10-14",
+    "sections": [
+      "mechanism-structural",
+      "application-video-editing"
+    ],
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhuang_FlashVSR_Towards_Real-time_Diffusion-Based_Streaming_Video_Super_Resolution_CVPR_2026_paper.html"
+  },
+  {
+    "id": "arxiv:2510.13602",
+    "title": "NOSA: Native and Offloadable Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-10-15",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2510.18692",
+    "title": "MoGA: Mixture-of-Groups Attention for End-to-End Long Video Generation",
+    "year": 2025,
+    "first_public": "2025-10-21",
+    "sections": [
+      "mechanism-learned",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2510.18830",
+    "title": "MTraining: Distributed Dynamic Sparse Attention for Efficient Ultra-Long Context Training",
+    "year": 2025,
+    "first_public": "2025-10-21",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2510.20822",
+    "title": "HoloCine: Holistic Generation of Cinematic Multi-Shot Long Video Narratives",
+    "year": 2025,
+    "first_public": "2025-10-23",
+    "sections": [
+      "application-long-video",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2510.22200",
+    "title": "LongCat-Video Technical Report",
+    "year": 2025,
+    "first_public": "2025-10-25",
+    "sections": [
+      "mechanism-pooling",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2511.05832",
+    "title": "Hilbert-Guided Sparse Local Attention",
+    "year": 2025,
+    "first_public": "2025-11-08",
+    "sections": [
+      "application-image",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2511.11062",
+    "title": "LiteAttention: A Temporal Sparse Attention for Diffusion Transformers",
+    "year": 2025,
+    "first_public": "2025-11-14",
+    "sections": [
+      "application-video"
+    ],
+    "featured": {
+      "name": "LiteAttention",
+      "note": "Reuse of tile-skip decisions across denoising steps"
+    },
+    "code": {
+      "label": "LiteAttention",
+      "url": "https://github.com/moonmath-ai/LiteAttention"
+    }
+  },
+  {
+    "id": "arxiv:2511.11571",
+    "title": "Optimizing Mixture of Block Attention",
+    "year": 2025,
+    "first_public": "2025-11-14",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2511.19835",
+    "title": "Rectified SpaAttn: Revisiting Attention Sparsity for Efficient Video Generation",
+    "year": 2025,
+    "first_public": "2025-11-25",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2511.19861",
+    "title": "GigaWorld-0: World Models as Data Engine to Empower Embodied AI",
+    "year": 2025,
+    "first_public": "2025-11-25",
+    "sections": [
+      "application-world-models",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2511.23113",
+    "title": "db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism",
+    "year": 2025,
+    "first_public": "2025-11-28",
+    "sections": [
+      "application-video-editing",
+      "related-systems"
+    ],
+    "featured": {
+      "name": "db-SP",
+      "note": "Workload balancing across attention heads and blocks in sequence parallelism"
+    },
+    "code": {
+      "label": "db-SP",
+      "url": "https://github.com/thu-nics/db-SP"
+    }
+  },
+  {
+    "id": "arxiv:2512.04025",
+    "title": "PSA: Pyramid Sparse Attention for Efficient Video Understanding and Generation",
+    "year": 2025,
+    "first_public": "2025-12-03",
+    "sections": [
+      "mechanism-sampling",
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2512.05754",
+    "title": "USV: Unified Sparsification for Accelerating Video Diffusion Models",
+    "year": 2025,
+    "first_public": "2025-12-05",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2512.12087",
+    "title": "BLASST: Dynamic BLocked Attention Sparsity via Softmax Thresholding",
+    "year": 2025,
+    "first_public": "2025-12-12",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2512.14322",
+    "title": "PADE: A Predictor-Free Sparse Attention Accelerator via Unified Execution and Stage Fusion",
+    "year": 2025,
+    "first_public": "2025-12-16",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2512.16615",
+    "title": "Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers",
+    "year": 2025,
+    "first_public": "2025-12-18",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2512.20198",
+    "title": "Designing Spatial Architectures for Sparse Attention: STAR Accelerator via Cross-Stage Tiling",
+    "year": 2025,
+    "first_public": "2025-12-23",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2512.20604",
+    "title": "MoE-DiffuSeq: Enhancing Long-Document Diffusion Models with Sparse Attention and Mixture of Experts",
+    "year": 2025,
+    "first_public": "2025-12-23",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2512.20724",
+    "title": "SA-DiffuSeq: Addressing Computational and Scalability Challenges in Long-Document Generation with Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-12-23",
+    "sections": [
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2512.24086",
+    "title": "RainFusion2.0: Temporal-Spatial Awareness and Hardware-Efficient Block-wise Sparse Attention",
+    "year": 2025,
+    "first_public": "2025-12-30",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2601.11641",
+    "title": "Mixture of Distributions Matters: Dynamic Sparse Attention for Efficient Video Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-01-14",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2601.16515",
+    "title": "SALAD: Achieve High-Sparsity Attention via Efficient Linear Attention Tuning for Video Diffusion Transformer",
+    "year": 2026,
+    "first_public": "2026-01-23",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2601.22275",
+    "title": "VMonarch: Efficient Video Diffusion Transformers with Structured Attention",
+    "year": 2026,
+    "first_public": "2026-01-29",
+    "sections": [
+      "application-video",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2602.01077",
+    "title": "PISA: Piecewise Sparse Attention Is Wiser for Efficient Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-02-01",
+    "sections": [],
+    "featured": {
+      "name": "PISA",
+      "note": "Taylor approximation of contributions from unselected blocks"
+    },
+    "code": {
+      "label": "PISA",
+      "url": "https://github.com/xie-lab-ml/piecewise-sparse-attention"
+    }
+  },
+  {
+    "id": "arxiv:2602.01801",
+    "title": "Fast Autoregressive Video Diffusion and World Models with Temporal Cache Compression and Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-02-02",
+    "sections": [
+      "mechanism-clustering",
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2602.04361",
+    "title": "SparVAR: Exploring Sparsity in Visual AutoRegressive Modeling for Training-Free Acceleration",
+    "year": 2026,
+    "first_public": "2026-02-04",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2602.04789",
+    "title": "Light Forcing: Accelerating Autoregressive Video Diffusion via Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-02-04",
+    "sections": [
+      "application-streaming"
+    ],
+    "featured": {
+      "name": "Light Forcing",
+      "note": "Frame retrieval followed by block selection in autoregressive video diffusion"
+    },
+    "code": {
+      "label": "Light Forcing",
+      "url": "https://github.com/chengtao-lv/LightForcing"
+    }
+  },
+  {
+    "id": "arxiv:2602.07854",
+    "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+    "year": 2026,
+    "first_public": "2026-02-08",
+    "sections": [
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2602.12271",
+    "title": "MonarchRT: Efficient Attention for Real-Time Video Generation",
+    "year": 2026,
+    "first_public": "2026-02-12",
+    "sections": [
+      "application-streaming",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2602.12675",
+    "title": "SLA2: Sparse-Linear Attention with Learnable Routing and QAT",
+    "year": 2026,
+    "first_public": "2026-02-13",
+    "sections": [
+      "mechanism-clustering"
+    ]
+  },
+  {
+    "id": "arxiv:2602.13515",
+    "title": "SpargeAttention2: Trainable Sparse Attention via Hybrid Top-k+Top-p Masking and Distillation Fine-Tuning",
+    "year": 2026,
+    "first_public": "2026-02-13",
+    "sections": [
+      "mechanism-pooling"
+    ]
+  },
+  {
+    "id": "arxiv:2602.20515",
+    "title": "FAST-Prefill: FPGA Accelerated Sparse Attention for Long Context LLM Prefill",
+    "year": 2026,
+    "first_public": "2026-02-24",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2602.21818",
+    "title": "SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model",
+    "year": 2026,
+    "first_public": "2026-02-25",
+    "sections": [
+      "application-video-editing",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2603.05503",
+    "title": "Accelerating Text-to-Video Generation with Calibrated Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-03-05",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2603.08982",
+    "title": "SVG-EAR: Parameter-Free Linear Compensation for Sparse Video Generation via Error-aware Routing",
+    "year": 2026,
+    "first_public": "2026-03-09",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2603.12201",
+    "title": "IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse",
+    "year": 2026,
+    "first_public": "2026-03-12",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2603.12575",
+    "title": "AccelAes: Accelerating Diffusion Transformers for Training-Free Aesthetic-Enhanced Image Generation",
+    "year": 2026,
+    "first_public": "2026-03-13",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2603.13430",
+    "title": "Dynamic Sparse Attention: Access Patterns and Architecture",
+    "year": 2026,
+    "first_public": "2026-03-13",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2603.18636",
+    "title": "Attention Sparsity is Input-Stable: Training-Free Sparse Attention for Video Generation via Offline Sparsity Profiling and Online QK Co-Clustering",
+    "year": 2026,
+    "first_public": "2026-03-19",
+    "sections": [
+      "mechanism-clustering",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2603.29494",
+    "title": "VecAttention: Vector-wise Sparse Attention for Accelerating Long Context Inference",
+    "year": 2026,
+    "first_public": "2026-03-31",
+    "sections": [
+      "mechanism-pooling",
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2604.05182",
+    "title": "LSRM: High-Fidelity Object-Centric Reconstruction via Scaled Context Windows",
+    "year": 2026,
+    "first_public": "2026-04-06",
+    "sections": [
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2604.12056",
+    "title": "LoSA: Locality Aware Sparse Attention for Block-Wise Diffusion Language Models",
+    "year": 2026,
+    "first_public": "2026-04-13",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2604.12219",
+    "title": "Ride the Wave: Precision-Allocated Sparse Attention for Smooth Video Generation",
+    "year": 2026,
+    "first_public": "2026-04-14",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2604.18348",
+    "title": "AdaCluster: Adaptive Query-Key Clustering for Sparse Attention in Video Generation",
+    "year": 2026,
+    "first_public": "2026-04-20",
+    "sections": [
+      "mechanism-clustering",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2604.19747",
+    "title": "AnyRecon: Arbitrary-View 3D Reconstruction with Video Diffusion Model",
+    "year": 2026,
+    "first_public": "2026-04-21",
+    "sections": [
+      "application-3d-4d",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2604.20470",
+    "title": "DynamicRad: Content-Adaptive Sparse Attention for Long Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-04-22",
+    "sections": [
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2604.21221",
+    "title": "Sparse Forcing: Native Trainable Sparse Attention for Real-time Autoregressive Diffusion Video Generation",
+    "year": 2026,
+    "first_public": "2026-04-23",
+    "sections": [
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2604.21592",
+    "title": "Sculpt4D: Generating 4D Shapes via Sparse-Attention Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-04-23",
+    "sections": [
+      "mechanism-structural",
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2604.23632",
+    "title": "Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation",
+    "year": 2026,
+    "first_public": "2026-04-26",
+    "sections": [
+      "mechanism-structural",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2604.24820",
+    "title": "Salca: A Sparsity-Aware Hardware Accelerator for Efficient Long-Context Attention Decoding",
+    "year": 2026,
+    "first_public": "2026-04-27",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2605.04569",
+    "title": "LIVEditor-14B: Lightning Unified Video Editing via In-Context Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-05-06",
+    "sections": [
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2605.13465",
+    "title": "Z-Order Transformer for Feed-Forward Gaussian Splatting",
+    "year": 2026,
+    "first_public": "2026-05-13",
+    "sections": [
+      "application-3d-4d",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2605.14513",
+    "title": "HEART: Exploiting Head Heterogeneity in Sparse Attention for Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-05-14",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2605.15684",
+    "title": "ElasticDiT: Efficient Diffusion Transformers via Elastic Architecture and Sparse Attention for High-Resolution Image Generation on Mobile Devices",
+    "year": 2026,
+    "first_public": "2026-05-15",
+    "sections": [
+      "mechanism-pooling",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2605.18346",
+    "title": "Focused Forcing: Content-Aware Per-Frame KV Selection for Efficient Autoregressive Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-05-18",
+    "sections": [
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2605.19726",
+    "title": "Efficient Long-Context Modeling in Diffusion Language Models via Block Approximate Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-05-19",
+    "sections": [
+      "mechanism-pooling"
+    ]
+  },
+  {
+    "id": "arxiv:2605.20813",
+    "title": "PulseCol: Periodically Refreshed Column-Sparse Attention for Accelerating Diffusion Language Models",
+    "year": 2026,
+    "first_public": "2026-05-20",
+    "sections": [
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2605.22718",
+    "title": "WorldKV: Efficient World Memory with World Retrieval and Compression",
+    "year": 2026,
+    "first_public": "2026-05-21",
+    "sections": [
+      "application-world-models"
+    ],
+    "featured": {
+      "name": "WorldKV",
+      "note": "Retrieval of historical KV chunks using camera and action correspondence"
+    },
+    "code": {
+      "label": "WorldKV",
+      "url": "https://github.com/cvlab-kaist/WorldKV"
+    }
+  },
+  {
+    "id": "arxiv:2605.23245",
+    "title": "SimInsert: Seamless Video Object Insertion via Regional Sparse Attention Fusion",
+    "year": 2026,
+    "first_public": "2026-05-22",
+    "sections": [
+      "application-video-editing",
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2605.23445",
+    "title": "DFSAttn: Dynamic Fine-grained Sparse Attention for Efficient Video Generation",
+    "year": 2026,
+    "first_public": "2026-05-22",
+    "sections": [
+      "mechanism-pooling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2605.24892",
+    "title": "X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling",
+    "year": 2026,
+    "first_public": "2026-05-24",
+    "sections": [
+      "application-world-models",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2605.25500",
+    "title": "Full-4D: Generating Full-Scope 4D Scenes from a Single-View Video",
+    "year": 2026,
+    "first_public": "2026-05-25",
+    "sections": [
+      "application-3d-4d",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2605.25798",
+    "title": "DiSC: Resolution-Scalable Acceleration of Diffusion Models by Exploiting Sparsity and Cached Token Reuse with Hash-based Distribution",
+    "year": 2026,
+    "first_public": "2026-05-25",
+    "sections": []
+  },
+  {
+    "id": "arxiv:2605.26109",
+    "title": "Helix4D: Complex 4D Mesh Generation",
+    "year": 2026,
+    "first_public": "2026-05-25",
+    "sections": [
+      "mechanism-structural",
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2605.28691",
+    "title": "OSP-Next: Efficient High-Quality Video Generation with Sparse Sequence Parallelism, HiF8 Quantization, and Reinforcement Learning",
+    "year": 2026,
+    "first_public": "2026-05-27",
+    "sections": [
+      "mechanism-structural",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2605.28816",
+    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+    "year": 2026,
+    "first_public": "2026-05-27",
+    "sections": [
+      "application-world-models",
+      "related-trainable"
+    ]
+  },
+  {
+    "id": "arxiv:2605.30325",
+    "title": "Veda: Scalable Video Diffusion via Distilled Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-05-28",
+    "sections": [
+      "mechanism-learned",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2605.31057",
+    "title": "LVSA: Training-Free Sparse Attention for Long Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-05-29",
+    "sections": [
+      "mechanism-structural",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2605.31158",
+    "title": "Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models",
+    "year": 2026,
+    "first_public": "2026-05-29",
+    "sections": [
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2606.06453",
+    "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
+    "year": 2026,
+    "first_public": "2026-06-04",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2606.13872",
+    "title": "Avatar V: Scaling Video-Reference Avatar Video Generation",
+    "year": 2026,
+    "first_public": "2026-06-11",
+    "sections": [
+      "mechanism-structural",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2606.16317",
+    "title": "Training-free sparse attention based on cumulative energy filtering",
+    "year": 2026,
+    "first_public": "2026-06-15",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2606.23019",
+    "title": "ScalingAttention: Discovering Intrinsic Sparse Attention Topology for Video Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-06-22",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2606.23743",
+    "title": "Sol Video Inference Engine: Agent-Native Full-Stack Acceleration Framework for Efficient Video Generation",
+    "year": 2026,
+    "first_public": "2026-06-21",
+    "sections": [
+      "application-video-editing",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2606.25040",
+    "title": "Chorus II: Cross-Request Sparsity Reuse for Efficient Image-to-Video Generation",
+    "year": 2026,
+    "first_public": "2026-06-23",
+    "sections": [
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2607.03012",
+    "title": "HyperVAttention: Efficient Sparse Attention with Spatio-Temporal Clustering for Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-07-03",
+    "sections": [
+      "mechanism-clustering",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2607.11976",
+    "title": "LiteTopK: Exploiting the Curse of Dimensionality for a Fused Indexer-TopK Kernel in Long-Context Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-07-13",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2607.15846",
+    "title": "DSTAR: Accelerating Diffusion Transformers via Spatial and Temporal Redundancy Reduction",
+    "year": 2026,
+    "first_public": "2026-07-17",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2607.16190",
+    "title": "FVAttn: Adaptive Sparse Attention with Runtime Load Balancing for Video Generation",
+    "year": 2026,
+    "first_public": "2026-07-17",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2607.20125",
+    "title": "HeadCast: Casting Attention Heads for Efficient Autoregressive Video Generation",
+    "year": 2026,
+    "first_public": "2026-07-22",
+    "sections": [
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2607.21927",
+    "title": "RIS-Kernel: A Model-Agnostic Architecture for Long-Context LLM Inference via Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-07-24",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2607.24027",
+    "title": "Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification",
+    "year": 2026,
+    "first_public": "2026-07-27",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2607.25291",
+    "title": "CoSA: Accelerating Long-Context Inference via Proxy-Kernel Co-Designed Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-07-28",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2607.26037",
+    "title": "Wonder: Video World Model Done Better",
+    "year": 2026,
+    "first_public": "2026-07-28",
+    "sections": [
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2608.02504",
+    "title": "Token Radius Attention for Efficient Video Generation",
+    "year": 2026,
+    "first_public": "2026-08-03",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2608.03335",
+    "title": "SPADE: An Input-Adaptive Sparse Attention Engine for Fast Video Diffusion Models Inference",
+    "year": 2026,
+    "first_public": "2026-08-04",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2608.03555",
+    "title": "Heterogeneous LLM Serving with General-Purpose Processing-Near-Memory for Retrieval-Based Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-08-04",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2608.05663",
+    "title": "Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming",
+    "year": 2026,
+    "first_public": "2026-08-06",
+    "sections": [
+      "mechanism-structural",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2608.08553",
+    "title": "MotionCraft: Latent World Modeling with Sparse Attention for Visual Upscaling",
+    "year": 2026,
+    "first_public": "2026-08-09",
+    "sections": [
+      "mechanism-pooling",
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2608.10519",
+    "title": "SparSTAR: Sparse Attention for SpaceTime AutoRegressive Video Synthesis",
+    "year": 2026,
+    "first_public": "2026-08-11",
+    "sections": [
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2608.12032",
+    "title": "LoSA: Near-Lossless Sparse Attention for Training-Free Video Diffusion Acceleration",
+    "year": 2026,
+    "first_public": "2026-08-12",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2608.12780",
+    "title": "SCOPE: Subspace Clustering with Online Per-Head Top-K Estimation for Sparse Video Attention",
+    "year": 2026,
+    "first_public": "2026-08-13",
+    "sections": [
+      "mechanism-clustering",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2608.15522",
+    "title": "Efficient Audio-Visual Generation via Synchrony-Aware Cross-Modal Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-08-16",
+    "sections": [
+      "application-audio-visual",
+      "related-training-free"
+    ]
+  },
+  {
+    "id": "arxiv:2608.18484",
+    "title": "Partition the Support, Reconstruct the Residual: Training-Free Sparse Attention for Video Generation and World Models",
+    "year": 2026,
+    "first_public": "2026-08-19",
+    "sections": [
+      "mechanism-clustering",
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2608.19758",
+    "title": "FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+    "year": 2026,
+    "first_public": "2026-08-20",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2608.23383",
+    "title": "Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds",
+    "year": 2026,
+    "first_public": "2026-08-24",
+    "sections": [
+      "mechanism-structural",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2608.23565",
+    "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+    "year": 2026,
+    "first_public": "2026-08-24",
+    "sections": [
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2608.26671",
+    "title": "RECAP-Forcing: Retaining Content Appearances for Long Video Generation",
+    "year": 2026,
+    "first_public": "2026-08-27",
+    "sections": [
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2608.26965",
+    "title": "ClusterAttention: A training-free speedup of bidirectional attention",
+    "year": 2026,
+    "first_public": "2026-08-27",
+    "sections": [
+      "mechanism-clustering"
+    ]
+  },
+  {
+    "id": "arxiv:2608.27922",
+    "title": "DensityKV: Density-Guided KV Cache Compression for Long Video Generation",
+    "year": 2026,
+    "first_public": "2026-08-28",
+    "sections": [
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2609.11638",
+    "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+    "year": 2026,
+    "first_public": "2026-09-10",
+    "sections": [
+      "mechanism-structural",
+      "application-video-editing",
+      "application-audio-visual"
+    ]
+  },
+  {
+    "id": "arxiv:2609.19702",
+    "title": "Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation",
+    "year": 2026,
+    "first_public": "2026-09-17",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2609.21437",
+    "title": "Think Locally, Refine Globally for Memory-Efficient 3D Reconstruction",
+    "year": 2026,
+    "first_public": "2026-09-18",
+    "sections": [
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2609.23153",
+    "title": "SparkDiffusion: Mitigating the High-Sparsity Trap — A Unified Framework for up to 265× Single-GPU Acceleration of Visual Generation",
+    "year": 2026,
+    "first_public": "2026-09-19",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2609.23169",
+    "title": "UltraTex: Unleashing 2K Multi-View Diffusion for 3D Texturing",
+    "year": 2026,
+    "first_public": "2026-09-19",
+    "sections": [
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2609.25869",
+    "title": "Decoupling Logical Masks from GPU Execution for Dynamic Block-Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-09-22",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2609.32197",
+    "title": "SparSP: Exploiting Communication Sparsity for Sequence-Parallel Video DiTs",
+    "year": 2026,
+    "first_public": "2026-09-26",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2609.32420",
+    "title": "Carnator: Fast Text-to-Video Generation with Generation-Native Compatibility-Guided Cross-Request Reuse",
+    "year": 2026,
+    "first_public": "2026-09-26",
+    "sections": [
+      "application-video",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2609.32518",
+    "title": "UnStep: Training-Free Acceleration of Causal Video Diffusion with Fewer Steps Than Distillation",
+    "year": 2026,
+    "first_public": "2026-09-26",
+    "sections": [
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2609.32628",
+    "title": "DraftAttention2: Fast Video Diffusion with Low-Resolution-Guided Mixed-Precision Attention",
+    "year": 2026,
+    "first_public": "2026-09-26",
+    "sections": [
+      "mechanism-pooling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2609.32831",
+    "title": "UniCache: Task- and Type-Aware KV Cache Compression for Unified Multimodal Models",
+    "year": 2026,
+    "first_public": "2026-09-26",
+    "sections": [
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2609.34606",
+    "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
+    "year": 2026,
+    "first_public": "2026-09-28",
+    "sections": [
+      "application-world-models",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2609.34814",
+    "title": "WaveAlign: Cache-Aware Query-Row Scheduling for Sparse Attention in Long-Video Generation",
+    "year": 2026,
+    "first_public": "2026-09-28",
+    "sections": [
+      "application-long-video",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2609.37001",
+    "title": "Parameterized Stripe Attention for Efficient Video Generation",
+    "year": 2026,
+    "first_public": "2026-09-29",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2609.37831",
+    "title": "ReCaVSR: One-Step Streaming Diffusion Video Super-Resolution with Recycled Latents and Learned Cache Routing",
+    "year": 2026,
+    "first_public": "2026-09-29",
+    "sections": [
+      "mechanism-structural",
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2609.38978",
+    "title": "PARK: Accurate Block Retrieval for Sparse Attention in Video Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-09-30",
+    "sections": [
+      "mechanism-pooling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2609.39096",
+    "title": "DeCoPrune: Efficient KV-Cache Pruning for Autoregressive Video Diffusion via Denoising Consistency",
+    "year": 2026,
+    "first_public": "2026-09-30",
+    "sections": [
+      "application-streaming",
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2610.02153",
+    "title": "MosaiChunk: Compositing Spatio-Temporal Memory for Autoregressive Video Generation",
+    "year": 2026,
+    "first_public": "2026-10-01",
+    "sections": [
+      "mechanism-learned",
+      "application-long-video",
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2610.06801",
+    "title": "MC-Sparse: Deconstructing and Closing the Dense-Sparse Attention Gap in Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-10-05",
+    "sections": [
+      "application-video",
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2610.08772",
+    "title": "Backend-Agnostic Sparse Attention for Fast High-Resolution Visual Generation",
+    "year": 2026,
+    "first_public": "2026-10-06",
+    "sections": [
+      "mechanism-structural",
+      "application-image",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.11302",
+    "title": "iCATS: Fast Video Generation via Interaction-Aware Sparse Attention and Timestep-Adaptive Sparsity",
+    "year": 2026,
+    "first_public": "2026-10-08",
+    "sections": [
+      "mechanism-clustering",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.11756",
+    "title": "Memory Forcing: Attendable Mid-Horizon History for Streaming Video Generation",
+    "year": 2026,
+    "first_public": "2026-10-08",
+    "sections": [
+      "application-long-video",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2610.12727",
+    "title": "Zebra3D: Efficient Hybrid Foundation Models For Scalable 3D Reconstruction",
+    "year": 2026,
+    "first_public": "2026-10-08",
+    "sections": [
+      "application-3d-4d"
+    ]
+  },
+  {
+    "id": "arxiv:2610.14672",
+    "title": "Competition Domains Matter: Selective Head Globalization for Training-Free Sparse Attention in Video Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-10-10",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.17926",
+    "title": "CineMem: Attention-Aligned Fine-grained Memory Retrieval for Multi-Shot Long Video Generation",
+    "year": 2026,
+    "first_public": "2026-10-13",
+    "sections": [
+      "mechanism-clustering",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.21129",
+    "title": "Sparse Attention for Video Generation Acceleration via Growing Sparsity and Reduced Search",
+    "year": 2026,
+    "first_public": "2026-10-15",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.22311",
+    "title": "Velox: Spatial Memory Makes World Models Efficient",
+    "year": 2026,
+    "first_public": "2026-10-15",
+    "sections": [
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "arxiv:2610.22975",
+    "title": "Sink-Sparse Hybrid Attention for Efficient Inference in T2I/T2V Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-10-16",
+    "sections": [
+      "mechanism-calibrated",
+      "application-image",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.26244",
+    "title": "RECAP: Reciprocal Sparse Attention and Hierarchical Caching for Efficient Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-10-19",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.26262",
+    "title": "Dynamics-Aware Sparse Attention for Efficient Autoregressive Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-10-19",
+    "sections": [
+      "application-long-video",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2610.28096",
+    "title": "KPage: Cross-Block Page Compaction for Hardware-Efficient Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-10-20",
+    "sections": [
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2610.29441",
+    "title": "Sparsity Should Be ALLOTted by Output: Training-Free Allocation of Block-Sparse Attention for Video Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-10-21",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2610.31565",
+    "title": "Squaring-the-Sphere: Distortion-Free and Seamless Panorama Generation via CubeAtlas",
+    "year": 2026,
+    "first_public": "2026-10-22",
+    "sections": [
+      "mechanism-structural",
+      "application-image"
+    ]
+  },
+  {
+    "id": "arxiv:2610.39663",
+    "title": "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers",
+    "year": 2026,
+    "first_public": "2026-10-29",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.01858",
+    "title": "Learning-to-Memorize: Dynamic Context Management for Long-Horizon Autoregressive Video Generation",
+    "year": 2026,
+    "first_public": "2026-11-01",
+    "sections": [
+      "mechanism-learned",
+      "application-long-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.05917",
+    "title": "DecoupAttn: Decoupled Sparse Attention for Training-Free Acceleration of Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-11-04",
+    "sections": [
+      "mechanism-calibrated",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.08610",
+    "title": "InstaGen: Group-Shared Importance Sampling for Fast Video Generation",
+    "year": 2026,
+    "first_public": "2026-11-05",
+    "sections": [
+      "mechanism-sampling",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.10448",
+    "title": "ESTRA: Enabling Extreme Attention Sparsity for Training-Free Video Diffusion Acceleration",
+    "year": 2026,
+    "first_public": "2026-11-07",
+    "sections": [
+      "mechanism-clustering",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.10594",
+    "title": "OneReel: Efficient Multi-Scene Video Generation with Scene-Structured Attention",
+    "year": 2026,
+    "first_public": "2026-11-07",
+    "sections": [
+      "application-video",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2611.11452",
+    "title": "Semantically Aligned KV Cache Compression for Efficient Agentic Autoregressive Video Generation",
+    "year": 2026,
+    "first_public": "2026-11-08",
+    "sections": [
+      "application-long-video",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2611.15983",
+    "title": "TRACE: Trajectory Synchronization for Training-Free Resolution Extension in Video Generation",
+    "year": 2026,
+    "first_public": "2026-11-11",
+    "sections": [
+      "mechanism-structural",
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.17930",
+    "title": "Token2Tile: Token-Wise Sparse Attention with Tile Execution through a Low-Rank Space for Video DiTs",
+    "year": 2026,
+    "first_public": "2026-11-13",
+    "sections": [
+      "mechanism-clustering",
+      "application-video",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2611.19261",
+    "title": "dit.xpu: Taming DiT Sparse Inference on Mobile SoCs",
+    "year": 2026,
+    "first_public": "2026-11-14",
+    "sections": [
+      "application-image",
+      "related-systems"
+    ]
+  },
+  {
+    "id": "arxiv:2611.20307",
+    "title": "PoCoAttn: Position-Content Collaborative Sparse Attention for Fast and High-Fidelity Video Generation",
+    "year": 2026,
+    "first_public": "2026-11-15",
+    "sections": [
+      "application-video"
+    ]
+  },
+  {
+    "id": "arxiv:2611.20704",
+    "title": "QASK-Edit: Adaptive Sparse Attention Across Queries and Key Sources for Efficient Video Editing",
+    "year": 2026,
+    "first_public": "2026-11-16",
+    "sections": [
+      "application-video-editing"
+    ]
+  },
+  {
+    "id": "arxiv:2611.21038",
+    "title": "ScoutCache: Efficient Few-Step Autoregressive Video Diffusion via Conditional Readout and Selective Caching",
+    "year": 2026,
+    "first_public": "2026-11-16",
+    "sections": [
+      "application-long-video",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2611.21559",
+    "title": "Reference Forcing: Long Video Generation with Region-Guided Drift Correction",
+    "year": 2026,
+    "first_public": "2026-11-16",
+    "sections": [
+      "application-long-video",
+      "application-streaming"
+    ]
+  },
+  {
+    "id": "arxiv:2611.22001",
+    "title": "DreamFAR: Real-Time and Long-Horizon Interaction with Diverse Objects",
+    "year": 2026,
+    "first_public": "2026-11-16",
+    "sections": [
+      "application-world-models"
+    ]
+  },
+  {
+    "id": "doi:10.1109/isca52012.2021.00060",
+    "title": "ELSA: Hardware-Software Co-design for Efficient, Lightweight Self-Attention Mechanism in Neural Networks",
+    "year": 2021,
+    "first_public": "2021-06",
+    "sections": [
+      "related-systems"
+    ],
+    "url": "https://taejunham.github.io/data/elsa_isca21.pdf"
+  },
+  {
+    "id": "doi:10.1145/3466752.3480125",
+    "title": "Sanger: A Co-Design Framework for Enabling Sparse Attention using Reconfigurable Architecture",
+    "year": 2021,
+    "first_public": "2021-10",
+    "sections": [
+      "related-systems"
+    ],
+    "url": "https://liqianglu-zju.github.io/files/conference/2021/MICRO_2021_Sanger.pdf"
+  },
+  {
+    "id": "doi:10.1145/3503222.3507738",
+    "title": "DOTA: Detect and Omit Weak Attentions for Scalable Transformer Acceleration",
+    "year": 2022,
+    "first_public": "2022-02-28",
+    "sections": [
+      "related-systems"
+    ],
+    "url": "https://researchportal.hkust.edu.hk/en/publications/dota-detect-and-omitweak-attentions-for-scalable-transformer-acce/"
+  },
+  {
+    "id": "venue:cvpr-2026-rapid",
+    "title": "RAPID: Reusing Attention Sparsity with Inter-step Adaptation for Efficient Video Diffusion",
+    "year": 2026,
+    "first_public": "2026-06",
+    "sections": [
+      "application-video"
+    ],
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lin_RAPID_Reusing_Attention_Sparsity_with_Inter-step_Adaptation_for_Efficient_Video_CVPR_2026_paper.pdf"
+  },
+  {
+    "id": "venue:iclr-2026-dsa",
+    "title": "DSA: Efficient Inference For Video Generation Models via Distributed Sparse Attention",
+    "year": 2026,
+    "first_public": "2026-04",
+    "sections": [
+      "mechanism-sampling",
+      "application-video-editing"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/c3728248f3c627d1f16ca5726cdf83f5-Paper-Conference.pdf"
+  },
+  {
+    "id": "venue:iclr-2026-resa",
+    "title": "RESA: Bringing Back What Sparse Attention Ignores with Residual Estimation",
+    "year": 2026,
+    "first_public": "2026-04",
+    "sections": [
+      "related-training-free"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/89bd6217280d1417370c89ee493ba3c7-Paper-Conference.pdf"
+  },
+  {
+    "id": "venue:pmlr-v306-tong26k",
+    "title": "Entropy-Aware Dynamic KV Cache Sparsification for Autoregressive Image Generation and Editing",
+    "year": 2026,
+    "first_public": "2026-07",
+    "sections": [
+      "mechanism-sampling",
+      "application-image"
+    ],
+    "url": "https://proceedings.mlr.press/v306/tong26k.html"
+  }
+]
